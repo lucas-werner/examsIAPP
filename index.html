@@ -932,7 +932,7 @@
                     <div class="p-3 bg-white rounded-lg border flex justify-between items-center">
                         <div class="flex items-center overflow-hidden">
                            <span class="font-bold ${resultClass} mr-3">${resultIcon}</span>
-                           <p class="text-gray-800 truncate">Question ${i + 1}: ${q.question.split('\n')[1] || q.question}</p>
+                           <p class="text-gray-800 truncate">Question ${i + 1}: ${q.question.replace(/\n/g, ' ')}</p>
                         </div>
                         <button class="view-rationale-btn text-sm text-blue-600 hover:underline flex-shrink-0 ml-4" data-question-index="${i}">View Details</button>
                     </div>
