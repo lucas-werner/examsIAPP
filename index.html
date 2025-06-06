@@ -56,6 +56,9 @@
             max-height: 90vh;
             overflow-y: auto;
         }
+        #progress-bar {
+            transition: width 0.4s ease;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -66,6 +69,9 @@
             <p class="text-gray-600 mt-2">Test your knowledge with these 100 questions.</p>
             <div class="mt-4 flex justify-center items-center space-x-4">
                 <div id="timer" class="text-2xl font-bold text-blue-600">03:00:00</div>
+            </div>
+            <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+                <div id="progress-bar" class="bg-blue-500 h-full rounded-full" style="width:0%"></div>
             </div>
         </div>
         
@@ -710,6 +716,7 @@
         const resultsContainer = document.getElementById('results');
         const restartBtn = document.getElementById('restart-btn');
         const timerEl = document.getElementById('timer');
+        const progressBar = document.getElementById('progress-bar');
 
         const modal = document.getElementById('rationale-modal');
         const closeModalBtn = document.getElementById('close-modal-btn');
@@ -737,6 +744,10 @@
                 }
             }, 1000);
         }
+
+        function updateProgressBar() {
+            progressBar.style.width = ((currentQuestionIndex + 1) / quizData.length * 100) + '%';
+        }
         
         function startQuiz() {
             currentQuestionIndex = 0;
@@ -747,6 +758,7 @@
 
             clearInterval(timerInterval);
             startTimer(180 * 60); // 180 minutes
+            updateProgressBar();
             showQuestion();
         }
 
@@ -788,6 +800,7 @@
             
             updateButtonStates();
             highlightPreviousSelection();
+            updateProgressBar();
 
             if (currentQuestion.type === 'multi-select') {
                 quizBody.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
