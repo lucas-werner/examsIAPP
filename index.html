@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIGP Interactive Practice Quiz</title>
+    <script>tailwind.config = { darkMode: "class" };</script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -14,7 +15,6 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 2rem;
-            background-color: #ffffff;
             border-radius: 1rem;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
@@ -61,16 +61,22 @@
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 dark:bg-gray-900">
 
-    <div class="quiz-container">
-        <div id="quiz-header" class="mb-6 text-center">
-            <h1 class="text-3xl font-bold text-gray-800">AIGP Practice Quiz</h1>
-            <p class="text-gray-600 mt-2">Test your knowledge with these 100 questions.</p>
+    <div class="quiz-container bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+        <div id="quiz-header" class="mb-6">
+            <div class="flex items-center justify-between">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100">AIGP Practice Quiz</h1>
+                <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" id="theme-toggle" class="sr-only peer">
+                    <div class="w-10 h-6 bg-gray-200 dark:bg-gray-700 rounded-full peer-checked:bg-blue-500 relative after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-transform peer-checked:after:translate-x-4"></div>
+                </label>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mt-2 text-center">Test your knowledge with these 100 questions.</p>
             <div class="mt-4 flex justify-center items-center space-x-4">
                 <div id="timer" class="text-2xl font-bold text-blue-600">03:00:00</div>
             </div>
-            <div class="mt-2 w-full bg-gray-200 rounded-full h-2">
+            <div class="mt-2 w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                 <div id="progress-bar" class="bg-blue-500 h-full rounded-full" style="width:0%"></div>
             </div>
         </div>
@@ -80,29 +86,29 @@
         </div>
 
         <div id="results" class="hidden">
-             <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Quiz Complete!</h2>
-              <div class="text-center p-6 bg-gray-50 rounded-lg">
-                <p class="text-lg text-gray-600">Your Score:</p>
+             <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 text-center">Quiz Complete!</h2>
+              <div class="text-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                <p class="text-lg text-gray-600 dark:text-gray-300">Your Score:</p>
                 <p id="final-score" class="text-6xl font-bold my-2">0</p>
                 <p id="pass-fail-status" class="text-2xl font-semibold"></p>
              </div>
              <div id="results-details" class="space-y-2 mt-8"></div>
              <div class="text-center">
-                <button id="restart-btn" class="mt-8 bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors">Restart Quiz</button>
+                <button id="restart-btn" class="mt-8 bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors dark:bg-blue-600 dark:hover:bg-blue-700">Restart Quiz</button>
              </div>
         </div>
     </div>
 
     <!-- Rationale Modal -->
     <div id="rationale-modal" class="modal-overlay hidden">
-        <div class="modal-content">
+        <div class="modal-content dark:bg-gray-800 dark:text-gray-100">
             <h3 id="modal-question" class="text-xl font-bold mb-4"></h3>
             <div id="modal-options" class="space-y-2 mb-4"></div>
-            <div class="p-4 bg-gray-100 rounded-lg">
-                <h4 class="font-bold text-gray-800">Rationale:</h4>
-                <p id="modal-rationale" class="text-gray-700 mt-2"></p>
+            <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg">
+                <h4 class="font-bold text-gray-800 dark:text-gray-100">Rationale:</h4>
+                <p id="modal-rationale" class="text-gray-700 dark:text-gray-300 mt-2"></p>
             </div>
-            <button id="close-modal-btn" class="mt-6 bg-gray-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-600 transition-colors w-full">Close</button>
+            <button id="close-modal-btn" class="mt-6 bg-gray-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-600 transition-colors w-full dark:bg-gray-600 dark:hover:bg-gray-700">Close</button>
         </div>
     </div>
 
@@ -720,6 +726,22 @@
 
         const modal = document.getElementById('rationale-modal');
         const closeModalBtn = document.getElementById('close-modal-btn');
+        const themeToggle = document.getElementById('theme-toggle');
+
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggle.checked = true;
+        }
+        themeToggle.addEventListener('change', () => {
+            if (themeToggle.checked) {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        });
         
         let currentQuestionIndex = 0;
         let userSelections = new Array(quizData.length).fill(null);
@@ -792,9 +814,9 @@
                    ${optionsHtml}
                 </div>
                 <div class="mt-6 flex justify-between items-center">
-                   <button id="back-btn" class="bg-gray-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-600 transition-colors">Back</button>
+                   <button id="back-btn" class="bg-gray-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-600 transition-colors dark:bg-gray-600 dark:hover:bg-gray-700">Back</button>
                    <p class="text-sm text-gray-500">Question ${currentQuestionIndex + 1} of ${quizData.length}</p>
-                   <button id="next-btn" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors">Next</button>
+                   <button id="next-btn" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors dark:bg-blue-600 dark:hover:bg-blue-700">Next</button>
                 </div>
             `;
             
