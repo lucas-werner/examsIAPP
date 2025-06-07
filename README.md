@@ -11,5 +11,5 @@ The page will load the quiz automatically and start a three‑hour timer when yo
 
 ## Prerequisites
 
-The HTML file references Tailwind CSS and Google Fonts via public CDNs. Make sure your computer has internet access the first time you open `index.html` so that these resources can be fetched by your browser.
+The HTML file references Tailwind CSS and Google Fonts via public CDNs and fetches `questions.json` for quiz data. Make sure your computer has internet access when you open `index.html` so these resources can be loaded.
 
