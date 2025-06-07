@@ -79,6 +79,15 @@
             <!-- Quiz content will be injected here by JavaScript -->
         </div>
 
+        <div id="mid-review" class="hidden">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Mid-Quiz Review</h2>
+            <p class="text-center text-gray-600 mb-4">Review your flagged questions before continuing.</p>
+            <div id="review-list" class="space-y-2"></div>
+            <div class="text-center mt-6">
+                <button id="continue-btn" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors">Continue Quiz</button>
+            </div>
+        </div>
+
         <div id="results" class="hidden">
              <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Quiz Complete!</h2>
               <div class="text-center p-6 bg-gray-50 rounded-lg">
@@ -713,6 +722,9 @@
 
         const quizBody = document.getElementById('quiz-body');
         const quizHeader = document.getElementById('quiz-header');
+        const reviewContainer = document.getElementById('mid-review');
+        const reviewList = document.getElementById('review-list');
+        const continueBtn = document.getElementById('continue-btn');
         const resultsContainer = document.getElementById('results');
         const restartBtn = document.getElementById('restart-btn');
         const timerEl = document.getElementById('timer');
@@ -723,22 +735,25 @@
         
         let currentQuestionIndex = 0;
         let userSelections = new Array(quizData.length).fill(null);
+        let flaggedQuestions = new Array(quizData.length).fill(false);
+        let reviewShown = false;
+        let remainingTime = 0;
         let timerInterval;
 
         function startTimer(durationInSeconds) {
-            let timer = durationInSeconds;
-            
+            remainingTime = durationInSeconds;
+
             clearInterval(timerInterval);
 
             timerInterval = setInterval(() => {
-                const hours = Math.floor(timer / 3600);
-                const minutes = Math.floor((timer % 3600) / 60);
-                const seconds = timer % 60;
+                const hours = Math.floor(remainingTime / 3600);
+                const minutes = Math.floor((remainingTime % 3600) / 60);
+                const seconds = remainingTime % 60;
 
-                timerEl.textContent = 
+                timerEl.textContent =
                     `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 
-                if (--timer < 0) {
+                if (--remainingTime < 0) {
                     clearInterval(timerInterval);
                     showResults();
                 }
@@ -749,15 +764,18 @@
             progressBar.style.width = ((currentQuestionIndex + 1) / quizData.length * 100) + '%';
         }
         
-        function startQuiz() {
-            currentQuestionIndex = 0;
-            userSelections = quizData.map(q => q.type === 'multi-select' ? [] : null);
-            resultsContainer.classList.add('hidden');
-            quizBody.classList.remove('hidden');
-            quizHeader.classList.remove('hidden');
+       function startQuiz() {
+           currentQuestionIndex = 0;
+           userSelections = quizData.map(q => q.type === 'multi-select' ? [] : null);
+            flaggedQuestions = new Array(quizData.length).fill(false);
+            reviewShown = false;
+            reviewContainer.classList.add('hidden');
+           resultsContainer.classList.add('hidden');
+           quizBody.classList.remove('hidden');
+           quizHeader.classList.remove('hidden');
 
-            clearInterval(timerInterval);
-            startTimer(180 * 60); // 180 minutes
+           clearInterval(timerInterval);
+           startTimer(180 * 60); // 180 minutes
             updateProgressBar();
             showQuestion();
         }
@@ -785,8 +803,9 @@
             }
 
             quizBody.innerHTML = `
-                <div class="mb-4">
+                <div class="mb-4 flex justify-between items-start">
                     <p class="text-lg font-semibold text-gray-700">${currentQuestion.question.replace(/\n/g, '<br>')}</p>
+                    <button id="flag-btn" class="ml-4 text-xl" aria-label="Flag question"></button>
                 </div>
                 <div id="options-container" class="space-y-3">
                    ${optionsHtml}
@@ -814,6 +833,22 @@
             
             document.getElementById('back-btn').addEventListener('click', prevQuestion);
             document.getElementById('next-btn').addEventListener('click', nextQuestion);
+
+            const flagBtn = document.getElementById('flag-btn');
+            const updateFlagIcon = () => {
+                if (flaggedQuestions[currentQuestionIndex]) {
+                    flagBtn.textContent = '🚩';
+                    flagBtn.classList.add('text-red-500');
+                } else {
+                    flagBtn.textContent = '⚑';
+                    flagBtn.classList.remove('text-red-500');
+                }
+            };
+            updateFlagIcon();
+            flagBtn.addEventListener('click', () => {
+                flaggedQuestions[currentQuestionIndex] = !flaggedQuestions[currentQuestionIndex];
+                updateFlagIcon();
+            });
         }
         
         function handleOptionClick(selectedButton) {
@@ -867,13 +902,54 @@
             }
         }
 
+        function showReviewPage() {
+            clearInterval(timerInterval);
+            quizBody.classList.add('hidden');
+            quizHeader.classList.add('hidden');
+            reviewContainer.classList.remove('hidden');
+
+            reviewList.innerHTML = flaggedQuestions.slice(0, quizData.length / 2)
+                .map((flagged, i) => {
+                    if (!flagged) return '';
+                    const q = quizData[i];
+                    return `
+                        <div class="p-3 bg-white rounded-lg border flex justify-between items-center">
+                            <p class="text-gray-800 truncate">Question ${i + 1}: ${q.question.replace(/\n/g, ' ')}</p>
+                            <button class="review-view-btn text-sm text-blue-600 hover:underline" data-question-index="${i}">View</button>
+                        </div>
+                    `;
+                })
+                .filter(Boolean)
+                .join('');
+
+            if (reviewList.innerHTML.trim() === '') {
+                reviewList.innerHTML = '<p class="text-center text-gray-600">No questions flagged.</p>';
+            }
+
+            document.querySelectorAll('.review-view-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => openRationaleModal(e.currentTarget.dataset.questionIndex));
+            });
+        }
+
         function nextQuestion() {
             if (currentQuestionIndex < quizData.length - 1) {
                 currentQuestionIndex++;
-                showQuestion();
+                if (currentQuestionIndex === quizData.length / 2 && !reviewShown) {
+                    showReviewPage();
+                } else {
+                    showQuestion();
+                }
             } else {
                 showResults();
             }
+        }
+
+        function continueQuiz() {
+            reviewShown = true;
+            reviewContainer.classList.add('hidden');
+            quizHeader.classList.remove('hidden');
+            startTimer(remainingTime);
+            showQuestion();
         }
 
         function showResults() {
@@ -992,6 +1068,7 @@
         // --- Event Listeners ---
         closeModalBtn.addEventListener('click', () => modal.classList.add('hidden'));
         restartBtn.addEventListener('click', startQuiz);
+        continueBtn.addEventListener('click', continueQuiz);
         
         // --- Initial Start ---
         startQuiz();

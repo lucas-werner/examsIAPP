@@ -9,6 +9,8 @@ This repository contains a single-page web application that provides an interact
 
 The page will load the quiz automatically and start a three‑hour timer when you press **Start**. You can restart the quiz at any time using the **Restart Quiz** button that appears once results are shown.
 
+At the halfway point, the quiz pauses for a review screen displaying any questions you've flagged. Click the small flag icon next to a question to mark it for later review.
+
 ## Prerequisites
 
 The HTML file references Tailwind CSS and Google Fonts via public CDNs. Make sure your computer has internet access the first time you open `index.html` so that these resources can be fetched by your browser.
