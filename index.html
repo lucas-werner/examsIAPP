@@ -724,21 +724,36 @@
         let currentQuestionIndex = 0;
         let userSelections = new Array(quizData.length).fill(null);
         let timerInterval;
+        let remainingTime = 0;
+
+        function saveQuizState() {
+            localStorage.setItem('userSelections', JSON.stringify(userSelections));
+            localStorage.setItem('currentQuestionIndex', currentQuestionIndex);
+            localStorage.setItem('timeRemaining', remainingTime);
+        }
+
+        function clearSavedQuizState() {
+            localStorage.removeItem('userSelections');
+            localStorage.removeItem('currentQuestionIndex');
+            localStorage.removeItem('timeRemaining');
+        }
 
         function startTimer(durationInSeconds) {
-            let timer = durationInSeconds;
-            
+            remainingTime = durationInSeconds;
+
             clearInterval(timerInterval);
 
             timerInterval = setInterval(() => {
-                const hours = Math.floor(timer / 3600);
-                const minutes = Math.floor((timer % 3600) / 60);
-                const seconds = timer % 60;
+                const hours = Math.floor(remainingTime / 3600);
+                const minutes = Math.floor((remainingTime % 3600) / 60);
+                const seconds = remainingTime % 60;
 
-                timerEl.textContent = 
+                timerEl.textContent =
                     `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 
-                if (--timer < 0) {
+                localStorage.setItem('timeRemaining', remainingTime);
+
+                if (--remainingTime < 0) {
                     clearInterval(timerInterval);
                     showResults();
                 }
@@ -750,14 +765,24 @@
         }
         
         function startQuiz() {
-            currentQuestionIndex = 0;
-            userSelections = quizData.map(q => q.type === 'multi-select' ? [] : null);
+            const savedSelections = JSON.parse(localStorage.getItem('userSelections'));
+            const savedIndex = parseInt(localStorage.getItem('currentQuestionIndex'), 10);
+            const savedTime = parseInt(localStorage.getItem('timeRemaining'), 10);
+
+            if (Array.isArray(savedSelections)) {
+                userSelections = savedSelections;
+                currentQuestionIndex = !isNaN(savedIndex) ? savedIndex : 0;
+            } else {
+                currentQuestionIndex = 0;
+                userSelections = quizData.map(q => q.type === 'multi-select' ? [] : null);
+            }
             resultsContainer.classList.add('hidden');
             quizBody.classList.remove('hidden');
             quizHeader.classList.remove('hidden');
 
             clearInterval(timerInterval);
-            startTimer(180 * 60); // 180 minutes
+            const timeToStart = !isNaN(savedTime) && savedTime > 0 ? savedTime : 180 * 60;
+            startTimer(timeToStart); // 180 minutes default
             updateProgressBar();
             showQuestion();
         }
@@ -822,6 +847,7 @@
             selectedButton.classList.add('selected');
             const selectedOption = selectedButton.textContent.trim().charAt(0);
             userSelections[currentQuestionIndex] = selectedOption;
+            saveQuizState();
         }
         
         function handleMultiSelectChange() {
@@ -830,6 +856,7 @@
                 selectedChars.push(cb.dataset.optionChar);
             });
             userSelections[currentQuestionIndex] = selectedChars;
+            saveQuizState();
         }
 
         function highlightPreviousSelection() {
@@ -863,6 +890,7 @@
         function prevQuestion() {
             if (currentQuestionIndex > 0) {
                 currentQuestionIndex--;
+                saveQuizState();
                 showQuestion();
             }
         }
@@ -870,6 +898,7 @@
         function nextQuestion() {
             if (currentQuestionIndex < quizData.length - 1) {
                 currentQuestionIndex++;
+                saveQuizState();
                 showQuestion();
             } else {
                 showResults();
@@ -878,6 +907,7 @@
 
         function showResults() {
             clearInterval(timerInterval);
+            clearSavedQuizState();
             let score = 0;
             userSelections.forEach((selection, index) => {
                 const question = quizData[index];
@@ -991,7 +1021,10 @@
         
         // --- Event Listeners ---
         closeModalBtn.addEventListener('click', () => modal.classList.add('hidden'));
-        restartBtn.addEventListener('click', startQuiz);
+        restartBtn.addEventListener('click', () => {
+            clearSavedQuizState();
+            startQuiz();
+        });
         
         // --- Initial Start ---
         startQuiz();
