@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIGP Interactive Practice Quiz</title>
+    <title>IAPP Practice Quiz</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -64,13 +64,13 @@
 
     <div class="quiz-container bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
         <div id="quiz-header" class="mb-6 relative">
-            <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 text-center pr-12">AIGP Practice Quiz</h1>
+            <h1 id="quiz-title" class="text-3xl font-bold text-gray-800 dark:text-gray-100 text-center pr-12">Practice Quiz</h1>
             <p class="text-gray-600 dark:text-gray-300 mt-2 text-center">Test your knowledge with these 100 questions.</p>
-            <div class="mt-4 flex justify-center items-center space-x-4">
-                <div id="timer" class="text-2xl font-bold text-blue-600">03:00:00</div>
-            </div>
-            <div class="mt-2 w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                <div id="progress-bar" class="bg-blue-500 h-full rounded-full" style="width:0%"></div>
+            <div class="absolute top-0 right-0 text-right">
+                <div id="timer" class="text-lg font-bold text-blue-600">03:00:00</div>
+                <div class="mt-1 w-40 bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div id="progress-bar" class="bg-blue-500 h-full rounded-full" style="width:0%"></div>
+                </div>
             </div>
         </div>
         
@@ -134,10 +134,22 @@
                 'cipt': 'questions_cipt.json',
                 'cipp-a': 'questions_cippa.json'
             };
+            const displayNames = {
+                'aigp': 'AIGP',
+                'cipp-e': 'CIPP/E',
+                'cipm': 'CIPM',
+                'cipt': 'CIPT',
+                'cipp-a': 'CIPP/A'
+            };
             const file = files[currentExam] || 'questions.json';
             const resp = await fetch(file);
             quizData = await resp.json();
             userSelections = new Array(quizData.length).fill(null);
+
+            const examName = displayNames[currentExam] || 'AIGP';
+            document.title = `${examName} Simulator`;
+            document.getElementById('quiz-title').textContent = `${examName} Practice Quiz`;
+
             startQuiz();
         }
 
