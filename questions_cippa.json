@@ -1,0 +1,57 @@
+[
+    {
+        "question": "1. In the APEC Privacy Framework, what exception is allowed to the Access and Correction principle?",
+        "options": [
+            "A. Paper-based records.",
+            "B. Publicly-available information.",
+            "C. Foreign intelligence.",
+            "D. Unreasonable expense."
+        ],
+        "answer": "D",
+        "rationale": "Access may be denied when providing it would impose an unreasonable burden or expense on the organization."        
+    },
+    {
+        "question": "2. How can the privacy principles issued in 1980 by the OECD be defined?",
+        "options": [
+            "A. Guidelines governing the protection of privacy and trans-border data flows issued with the FTC.",
+            "B. Guidelines governing the protection of privacy and trans-border data flows of personal data in member states.",
+            "C. Mandatory rules governing the protection of privacy and trans-border data flows within the European Union.",
+            "D. Mandatory rules governing the protection of privacy and trans-border data flows among binding member states."
+        ],
+        "answer": "B",
+        "rationale": "The OECD Guidelines are non-binding principles intended to harmonize privacy laws while allowing trans-border data flows."        
+    },
+    {
+        "question": "3. Which concept is NOT an element of the Cross Border Privacy Rules (CBPR) system?",
+        "options": [
+            "A. Enforcement by Accountability Agents.",
+            "B. Self-assessment against CBPR questionnaire.",
+            "C. Consultation with Privacy Enforcement Authority.",
+            "D. Dispute resolution via the Accountability Agent's compliance program."
+        ],
+        "answer": "C",
+        "rationale": "The CBPR system relies on certification by Accountability Agents, self-assessment and dispute resolution; consultation with a Privacy Enforcement Authority is not a listed element."        
+    },
+    {
+        "question": "4. What term is defined by the European Commission to mean any data relating to an identified or identifiable individual?",
+        "options": [
+            "A. Personally identifiable information.",
+            "B. Sensitive information.",
+            "C. Personal data.",
+            "D. Identified data."
+        ],
+        "answer": "C",
+        "rationale": "Under the GDPR, personal data is any information relating to an identified or identifiable natural person."        
+    },
+    {
+        "question": "5. What personal information is considered sensitive in almost all countries with privacy laws?",
+        "options": [
+            "A. Marital status.",
+            "B. Health information.",
+            "C. Employment history.",
+            "D. Criminal convictions."
+        ],
+        "answer": "B",
+        "rationale": "Health information is almost universally regarded as sensitive and subject to stronger protections."        
+    }
+]

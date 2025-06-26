@@ -1,0 +1,57 @@
+[
+    {
+        "question": "1. In the context of a large retailer implementing Privacy-by-Design principles, which strategy best ensures that customer data is protected throughout its life cycle?",
+        "options": [
+            "A. Encrypting customer data when it is at rest.",
+            "B. Updating privacy policies and training staff on privacy practices regularly.",
+            "C. Embedding privacy controls into each stage of the data processing life cycle.",
+            "D. Providing access to customer data to the marketing department exclusively."
+        ],
+        "answer": "C",
+        "rationale": "Embedding privacy controls throughout the data processing life cycle reflects end-to-end security and Privacy by Design principles."
+    },
+    {
+        "question": "2. Jenny completed a purchase on a website and saw a pop-up asking her to opt out of marketing emails with confusing choices. What does this exemplify?",
+        "options": [
+            "A. Dark pattern.",
+            "B. Clickstream pattern.",
+            "C. Guided marketing model.",
+            "D. Ad choice design approach."
+        ],
+        "answer": "A",
+        "rationale": "The options were designed to mislead the user, which is a classic dark pattern technique."
+    },
+    {
+        "question": "3. Before publishing aggregated usage data about its platform, what should a cloud service provider consider?",
+        "options": [
+            "A. Review the legal basis for keeping sales information and confirm customer consent.",
+            "B. Maintain a log of employees who accessed the database to check for modifications.",
+            "C. Ensure procedures exist to correct any errors in the published data.",
+            "D. Evaluate whether other information could be used to reidentify individuals from the aggregate data."
+        ],
+        "answer": "D",
+        "rationale": "Aggregated data may still be reidentified when combined with other sources, so the risk of reconstruction must be evaluated."        
+    },
+    {
+        "question": "4. A utility company purchases household data to match customer names in its database. What privacy threat is most likely to occur?",
+        "options": [
+            "A. The data could become distorted.",
+            "B. An individual’s identity could be appropriated.",
+            "C. The data could be used to identify an individual.",
+            "D. An individual could be placed under illegal surveillance."
+        ],
+        "answer": "A",
+        "rationale": "Using a logical rule to match names may falsely identify individuals, causing data distortion and credit issues."        
+    },
+    {
+        "question": "5. During each development sprint a team evaluates privacy implications when customer data is processed. Which process does this illustrate?",
+        "options": [
+            "A. Code audit process.",
+            "B. Code review process.",
+            "C. Software evolution process.",
+            "D. Runtime behavior monitoring."
+        ],
+        "answer": "C",
+        "rationale": "Continual evaluation of system changes aligns with the software evolution process, ensuring updates consider privacy impacts."        
+    }
+]

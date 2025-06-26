@@ -1,0 +1,57 @@
+[
+    {
+        "question": "1. What is the purpose for undertaking a privacy maturity assessment?",
+        "options": [
+            "A. Determine the age demographics of employees across businesses.",
+            "B. Compare privacy practice deficiencies between workforce teams.",
+            "C. Evaluate privacy practices and prioritize actions to improve.",
+            "D. Enable read access logging to benchmark improvements."
+        ],
+        "answer": "C",
+        "rationale": "A maturity assessment helps measure current maturity and prioritize improvements in an organization's privacy practices."
+    },
+    {
+        "question": "2. Under the privacy maturity model, what must an organization include to move from 'defined' to 'managed' maturity?",
+        "options": [
+            "A. Document and report all processes and procedures.",
+            "B. Establish and authorize a privacy management team.",
+            "C. Measure and control processes to establish effectiveness.",
+            "D. Determine and comply with applicable legal requirements."
+        ],
+        "answer": "C",
+        "rationale": "At the managed level, organizations not only document processes but also review and measure their effectiveness."        
+    },
+    {
+        "question": "3. Which employee privacy concern can be addressed through an HR policy?",
+        "options": [
+            "A. Employees' access to offered benefits.",
+            "B. Employees' professional development courses.",
+            "C. Employees' compliance with accrued time-off policies.",
+            "D. Employees' personal communications on work devices."
+        ],
+        "answer": "D",
+        "rationale": "Policies should clarify if and how personal use of work devices may be monitored, making it a privacy matter."        
+    },
+    {
+        "question": "4. After a short power outage a company finds some personal data may be lost. What should the privacy team do first?",
+        "options": [
+            "A. Consult with the incident response team.",
+            "B. Notify appropriate regulatory authorities.",
+            "C. Determine which data subjects are affected.",
+            "D. Disclose the incident to all data subjects."
+        ],
+        "answer": "A",
+        "rationale": "Before taking further action, the organization should consult its incident response team to determine next steps."        
+    },
+    {
+        "question": "5. When measuring privacy, which component focuses on the data remaining after time and cyclical elements are removed?",
+        "options": [
+            "A. The trending component.",
+            "B. The irregular component.",
+            "C. The automated component.",
+            "D. The operational component."
+        ],
+        "answer": "B",
+        "rationale": "The irregular component analyzes data left over once trending and cyclical components are accounted for."        
+    }
+]
