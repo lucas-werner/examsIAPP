@@ -7,6 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #204ce5;
+            --primary-hover: #001ab3;
+        }
+        .bg-blue-500 { background-color: var(--primary-color) !important; }
+        .hover\:bg-blue-600:hover { background-color: var(--primary-hover) !important; }
+        .text-blue-600 { color: var(--primary-color) !important; }
+        .bg-blue-600 { background-color: var(--primary-color) !important; }
+        .dark\:bg-blue-600 { background-color: var(--primary-color) !important; }
+        .dark\:hover\:bg-blue-700:hover { background-color: var(--primary-hover) !important; }
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -68,7 +78,6 @@
                 <button id="open-review-btn" class="text-blue-600 underline">Review</button>
             </div>
             <h1 id="quiz-title" class="text-3xl font-bold text-gray-800 dark:text-gray-100 text-center pr-12">Practice Quiz</h1>
-            <p class="text-gray-600 dark:text-gray-300 mt-2 text-center">Test your knowledge with these 100 questions.</p>
             <div class="absolute top-0 right-0 text-right">
                 <div id="timer" class="text-lg font-bold text-blue-600">03:00:00</div>
                 <div class="mt-1 w-40 bg-gray-200 dark:bg-gray-700 rounded-full h-2">
@@ -103,7 +112,8 @@
             </div>
         </div>
 
-        <div id="review-overview" class="hidden">
+        <div id="review-overview" class="hidden relative">
+            <button id="close-review-btn" class="absolute top-0 left-0 m-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors dark:bg-blue-600 dark:hover:bg-blue-700">Return to Quiz</button>
             <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 text-center">Review Questions</h2>
             <div class="overflow-x-auto">
                 <table class="min-w-full text-left border-collapse">
@@ -118,9 +128,7 @@
                     <tbody id="review-table-body"></tbody>
                 </table>
             </div>
-            <div class="text-center mt-6">
-                <button id="close-review-btn" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors dark:bg-blue-600 dark:hover:bg-blue-700">Return to Quiz</button>
-            </div>
+            <div class="mt-6"></div>
         </div>
     </div>
 
@@ -294,14 +302,14 @@
                 `).join('');
             }
 
-            const flagText = flaggedQuestions[currentQuestionIndex] ? 'Unflag Question' : 'Flag Question';
+            const flagIcon = flaggedQuestions[currentQuestionIndex]
+                ? `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z" clip-rule="evenodd"/></svg>`
+                : `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5"/></svg>`;
 
             quizBody.innerHTML = `
                 <div class="mb-4 flex justify-between items-start">
                     <p class="text-lg font-semibold text-gray-700 mr-4 dark:text-gray-100 break-words whitespace-pre-wrap">${currentQuestionIndex + 1}. ${currentQuestion.question.replace(/\n/g, '<br>')}</p>
-                    <div class="space-x-2">
-                        <button id="flag-btn" class="px-2 py-1 bg-yellow-200 rounded">${flagText}</button>
-                    </div>
+                    <button id="flag-btn" class="p-1" title="Flag Question">${flagIcon}</button>
                 </div>
                 <div id="options-container" class="space-y-3">
                    ${optionsHtml}
@@ -311,7 +319,7 @@
                    <p class="text-sm text-gray-500">Question ${currentQuestionIndex + 1} of ${quizData.length}</p>
                    <button id="next-btn" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors dark:bg-blue-600 dark:hover:bg-blue-700">Next</button>
                 </div>
-                <div class="mt-2 flex justify-end">
+                <div class="mt-2 flex justify-center">
                     <button id="answer-btn" class="px-2 py-1 bg-gray-200 rounded" title="See Answer">See Answer</button>
                 </div>
             `;
