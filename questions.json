@@ -1,6 +1,6 @@
 [
     {
-        "question": "1. Which of the following is a method that helps to ensure AI integrity and that data is representative, accurate and unbiased?",
+        "question": "Which of the following is a method that helps to ensure AI integrity and that data is representative, accurate and unbiased?",
         "options": [
             "A. Tracking data lineage.",
             "B. Assuming the data is accurate.",
@@ -11,7 +11,7 @@
         "rationale": "Data lineage tracks data over time from the source to any other intervening programs or uses, and ultimately to the AI program or process utilizing it. Knowing where and how data has been used and manipulated before it is incorporated into an AI program or process helps ensure the data being used is accurate and appropriate."
     },
     {
-        "question": "2. You are tasked with designing an AI system to predict customer attrition for a telecommunications company. During the design phase, you are focusing on developing the data strategy. Which of the following statements best describes the critical importance of data gathering in this phase?",
+        "question": "You are tasked with designing an AI system to predict customer attrition for a telecommunications company. During the design phase, you are focusing on developing the data strategy. Which of the following statements best describes the critical importance of data gathering in this phase?",
         "options": [
             "A. It primarily aims to reduce data storage costs, prioritizing low-cost repositories over data quality or relevance.",
             "B. It ensures the AI system has access to high-quality and relevant data, which is the fuel for training effective models.",
@@ -22,7 +22,7 @@
         "rationale": "Implementing a data strategy during the AI system design phase is crucial because it ensures access to high-quality and relevant data, which is fundamental for training effective AI models. The quality and relevance of data directly impacts the performance and accuracy of AI systems. The other options are irrelevant aspects of an AI system's design phase."
     },
     {
-        "question": "3. A US manufacturing company is implementing an algorithm-based system to assist with screening job applicants and making hiring decisions. Which of the following is least likely to provide guidance on minimizing potential discrimination and bias with this system?",
+        "question": "A US manufacturing company is implementing an algorithm-based system to assist with screening job applicants and making hiring decisions. Which of the following is least likely to provide guidance on minimizing potential discrimination and bias with this system?",
         "options": [
             "A. Fair Credit Reporting Act (FCRA).",
             "B. American with Disabilities Act (ADA).",
@@ -33,7 +33,7 @@
         "rationale": "The National Artificial Intelligence Initiative Act of 2020 establishes a national initiative to advance AI research and development. It does not provide guidance on minimizing potential discrimination and bias, although these are considerations for the various committees formed thereunder to address. The ADA has direct application to the use of software algorithms to make employment decisions. The FCRA imposes certain obligations on an organization using credit reporting information for employment purposes and adverse employment actions based on credit reporting information. While EEOC enforcement actions are not binding legal standards beyond the target company, enforcement actions for alleged discrimination and bias related to AI and automated decision-making systems provides direct evidence of the EEOC's view on how such systems may result in discrimination and bias."
     },
     {
-        "question": "4. In the context of workforce readiness for AI, what is an essential consideration for businesses to fully leverage AI benefits responsibly?",
+        "question": "In the context of workforce readiness for AI, what is an essential consideration for businesses to fully leverage AI benefits responsibly?",
         "options": [
             "A. Focusing on training a select IT task force in advanced AI techniques.",
             "B. Avoiding employee training on AI to prevent over-reliance on technology.",
@@ -44,7 +44,7 @@
         "rationale": "To maximize the benefits of AI, businesses should implement comprehensive training programs that encompass not just technical AI skills but also ethical considerations of AI usage. This approach ensures a broad-based understanding of AI across the organization, enabling more effective and responsible use of AI technologies."
     },
     {
-        "question": "5. What is the purpose of the model card in assessing the readiness of an AI model for production?",
+        "question": "What is the purpose of the model card in assessing the readiness of an AI model for production?",
         "options": [
             "A. It stores the model's input data that is used to generate outputs.",
             "B. It provides the correct outputs against which the AI model is tested.",
@@ -55,7 +55,7 @@
         "rationale": "Model cards are short documents provided with machine learning models that explain the context in which the models are intended to be used, details of the performance evaluation procedures and any other relevant information."
     },
     {
-        "question": "6. The manager of a call center decides to use an AI system to record and conduct sentiment analysis on interactions between customers and call center agents. Prior to using this data to evaluate the performance of the agents, what step should be implemented to minimize error in the evaluations?",
+        "question": "The manager of a call center decides to use an AI system to record and conduct sentiment analysis on interactions between customers and call center agents. Prior to using this data to evaluate the performance of the agents, what step should be implemented to minimize error in the evaluations?",
         "options": [
             "A. A security review of the AI system.",
             "B. A manual review of the recordings.",
@@ -66,7 +66,7 @@
         "rationale": "Human review or supervision of the recorded call should be done to ensure the sentiment analysis of the AI system is accurate prior to using the data to evaluate the agent's performance. Retention of data is important, but aggregate report data will not create risk for an individual. An estimate of call rates may help in staffing or workforce planning but won't directly affect an individual's performance rating. A security review of the AI will ensure security of the system, but also does not directly affect the individual or how their performance is evaluated."
     },
     {
-        "question": "SCENARIO I: AlphaTech, a renowned technology company in São Paulo, Brazil... \n 7. With this solution in sight, what initial step should AlphaTech take to ensure the interoperability of AI risk management with privacy risk management in its operations?",
+        "question": "SCENARIO I: AlphaTech, a renowned technology company in S\u00e3o Paulo, Brazil... \n 7. With this solution in sight, what initial step should AlphaTech take to ensure the interoperability of AI risk management with privacy risk management in its operations?",
         "options": [
             "A. Conduct regular simulations and tests.",
             "B. Implement continuous audit protocols.",
@@ -77,7 +77,7 @@
         "rationale": "While each of the steps listed is important at various stages of development and implementation, the first step should be to create a team that understands the complexities and needs of both privacy risk management and AI risk management. The reason for prioritizing the creation of a specialized multidisciplinary team is twofold: a. Integration of diversified knowledge: A multidisciplinary team brings together specialists in different areas, such as AI, data protection and digital law. This diversity of knowledge is essential to fully understand both the technical aspects of AI and the legal and ethical implications related to data privacy; and b. Foundation for implementing: With a specialized team in place, the company will have the necessary resources to plan and execute other strategies more effectively. For example, the team can oversee the implementation of continuous audit protocols, guide the development of ethical and transparent AI algorithms, and plan regular simulations and tests."
     },
     {
-        "question": "SCENARIO I: AlphaTech, a renowned technology company in São Paulo, Brazil... \n 8. Which of the following strategies would be most effective for AlphaTech to ensure privacy compliance when integrating AI into its operations?",
+        "question": "SCENARIO I: AlphaTech, a renowned technology company in S\u00e3o Paulo, Brazil... \n 8. Which of the following strategies would be most effective for AlphaTech to ensure privacy compliance when integrating AI into its operations?",
         "options": [
             "A. Delegate all the AI decisions to an automated algorithm.",
             "B. Implement a privacy training program for all employees.",
@@ -88,7 +88,7 @@
         "rationale": "Implementing a privacy training program for all employees will help ensure everyone in the company is aware of the responsibilities and practices necessary to maintain compliance with the data protection law."
     },
     {
-        "question": "SCENARIO I: AlphaTech, a renowned technology company in São Paulo, Brazil... \n 9. What is the best practice for AlphaTech to effectively integrate AI into operational risk monitoring without compromising data privacy?",
+        "question": "SCENARIO I: AlphaTech, a renowned technology company in S\u00e3o Paulo, Brazil... \n 9. What is the best practice for AlphaTech to effectively integrate AI into operational risk monitoring without compromising data privacy?",
         "options": [
             "A. Allow full access to the AI system for all employees.",
             "B. Focus only on operational risks, ignoring privacy risks.",
@@ -99,7 +99,7 @@
         "rationale": "Applying data minimization and transparency principles in AI implementation ensures that only necessary data is used and processes are transparent, balancing operational efficiency with privacy protection."
     },
     {
-        "question": "SCENARIO I: AlphaTech, a renowned technology company in São Paulo, Brazil... \n 10. What approach should AlphaTech adopt to ensure the integration of AI into its operations aligns with best cybersecurity practices?",
+        "question": "SCENARIO I: AlphaTech, a renowned technology company in S\u00e3o Paulo, Brazil... \n 10. What approach should AlphaTech adopt to ensure the integration of AI into its operations aligns with best cybersecurity practices?",
         "options": [
             "A. Delegate cybersecurity exclusively to the IT team.",
             "B. Reduce focus on cybersecurity to increase AI efficiency.",
@@ -110,7 +110,7 @@
         "rationale": "Integrating cybersecurity into the design and development of AI from the beginning ensures security concerns are proactively addressed rather than being an afterthought. This is essential to protect both the company's infrastructure and the data it processes."
     },
     {
-        "question": "11. Consider you are a privacy consultant with a tech company developing an AI-driven health-monitoring application. The application collects user data to provide personalized health insights. The company is dedicated to ensuring user privacy and seeks your advice. In the context of developing a privacy-enhanced AI health-monitoring application, which of the following measures would be most effective in aligning with privacy standards?",
+        "question": "Consider you are a privacy consultant with a tech company developing an AI-driven health-monitoring application. The application collects user data to provide personalized health insights. The company is dedicated to ensuring user privacy and seeks your advice. In the context of developing a privacy-enhanced AI health-monitoring application, which of the following measures would be most effective in aligning with privacy standards?",
         "options": [
             "A. Implementing user consent mechanisms and anonymizing collected data to protect user identities.",
             "B. Utilizing social media integration to enrich user profiles with additional lifestyle information and offers.",
@@ -121,7 +121,7 @@
         "rationale": "Obtaining consent from users empowers individuals to make informed decisions about the use of their health data. Furthermore, anonymizing involves removing personally identifiable information from the collected data, such as names, addresses and contact details."
     },
     {
-        "question": "12. Which of the following is an important consideration for mitigating AI system errors?",
+        "question": "Which of the following is an important consideration for mitigating AI system errors?",
         "options": [
             "A. Excluding a review of previous incidents.",
             "B. Focusing exclusively on legal compliance.",
@@ -132,7 +132,7 @@
         "rationale": "The AI use case and the data type involved in system errors will guide the method of mitigation needed. This allows for an appropriate response and helps to guide any updates or changes needed to avoid similar issues in the future."
     },
     {
-        "question": "13. Which of the following should be included in the documentation of an AI model's impact assessment?",
+        "question": "Which of the following should be included in the documentation of an AI model's impact assessment?",
         "options": [
             "A. Marketing and sales budgets.",
             "B. Stakeholder input and concerns.",
@@ -143,7 +143,7 @@
         "rationale": "Stakeholder inputs and concerns are important to be part of impact assessment, as it will provide key details on the output and how AI is performing, which will help in addressing issues. Training algorithm details and user demographics are required, but at the planning stage, which will help in access and eliminating any biased data. Marketing Budget is not a relevant option."
     },
     {
-        "question": "14. In the design phase of AI development, privacy-enhancing technologies play a critical role in addressing data privacy concerns. Among these technologies, differential privacy and federated learning are significant. Given this context, which of the following best illustrates the application of differential privacy in the AI design phase?",
+        "question": "In the design phase of AI development, privacy-enhancing technologies play a critical role in addressing data privacy concerns. Among these technologies, differential privacy and federated learning are significant. Given this context, which of the following best illustrates the application of differential privacy in the AI design phase?",
         "options": [
             "A. An AI model is trained in a centralized dataset in which individual data points are anonymized before being added to the dataset.",
             "B. An AI system enables multiple models to learn from separate datasets, then combines them to improve the overall model without sharing individual data points.",
@@ -154,7 +154,7 @@
         "rationale": "This option directly aligns with the principles of differential privacy. Differential privacy is a technique used to ensure the privacy of individual data points in a dataset by adding statistical noise. This method allows the dataset to be used for analysis or AI model training while maintaining the confidentiality of individual data entries. The key aspect of differential privacy is that it provides insights into the general patterns or trends of the data without revealing sensitive information about any specific individual."
     },
     {
-        "question": "15. When implementing responsible AI governance and risk management, what is a critical consideration for testing and evaluation in alignment with a specific use case?",
+        "question": "When implementing responsible AI governance and risk management, what is a critical consideration for testing and evaluation in alignment with a specific use case?",
         "options": [
             "A. Include potentially malicious data in the test.",
             "B. There is no need for repeatability assessments for novel cases.",
@@ -165,7 +165,7 @@
         "rationale": "Incorporating potentially malicious data into the testing process would enable the assessment of the AI's robustness and resilience against adversarial inputs and ensure that it behaves safely in real-world scenarios. The other options are not aligned with the best practices for responsible AI testing."
     },
     {
-        "question": "16. The Voter Registration Department of a state agency has implemented an AI tool to scan and cross-reference driver's license information and voter registration application information to detect fraud and identity theft. In assessing the effectiveness of the AI tool, which of the following is NOT a key assessment activity?",
+        "question": "The Voter Registration Department of a state agency has implemented an AI tool to scan and cross-reference driver's license information and voter registration application information to detect fraud and identity theft. In assessing the effectiveness of the AI tool, which of the following is NOT a key assessment activity?",
         "options": [
             "A. Auditing for bias and discrimination across multiple demographic groups.",
             "B. Confirming that all counties have analyzed the same number of voter registration applications.",
@@ -209,7 +209,7 @@
         "rationale": "The only binding instrument within the choices listed is the European AI Act. The OECD Guidelines on AI from 2019, the Blueprint for an AI Bill of Rights adopted by the White House in 2021 and the Singapore AI Governance Framework of 2019 are guidelines and part of the plethora of frameworks published in the last few years to aid organizations in building AI ethically."
     },
     {
-        "question": "20. When assessing the success of an AI system meeting its objectives, which of the following approaches best aligns with the requirement to ensure a comprehensive evaluation while avoiding automation bias?",
+        "question": "When assessing the success of an AI system meeting its objectives, which of the following approaches best aligns with the requirement to ensure a comprehensive evaluation while avoiding automation bias?",
         "options": [
             "A. Evaluate and align predefined benchmarks that will provide evidence of having achieved your system goals.",
             "B. Rely on the AI system's output to determine if the goals were achieved, as this will provide a reliable and objective measure.",
@@ -220,7 +220,7 @@
         "rationale": "This is a comprehensive approach as it includes different testing initiatives. By integrating the AI system's output, human interpretation and potential secondary or unintended outputs, you will avoid automation bias (when only relying on the output), as well as the limitation of having only human feedback that might not fully capture AI specificities. Additionally, this process avoids a narrow focus, which would be the result of using only a benchmark as a comparison item."
     },
     {
-        "question": "21. Which of the following pairs provides examples of potential group harms associated with AI technologies?",
+        "question": "Which of the following pairs provides examples of potential group harms associated with AI technologies?",
         "options": [
             "A. Safety and deep fakes.",
             "B. Acceleration and reputational.",
@@ -231,7 +231,7 @@
         "rationale": "Mass surveillance and facial recognition can lead to group harm given the potential use of AI technology to target and/or discriminate against specific groups/demographics. Safety and deep fakes are examples of societal harm, which is different than group harms in that they are not targeted against a specific group or demographic. Acceleration refers to the potential harm caused by AI advancing beyond the ability to safeguard it properly. Reputational harm refers to the potential risk to organizations or individuals from poorly managed AI or competitors creating deep fakes. Carbon dioxide emissions and agricultural harm refer to the possibility of increased computer reliance affecting the environment."
     },
     {
-        "question": "22. Put the following AI system planning phase steps in the right order by letter.\n A. Identify laws that apply\n B. Determine the business problem to be solved by the AI system\n C. Identify necessary data for the AI system\n D. Determine the specific use cases\n E. Identify gaps and risks to the use cases",
+        "question": "Put the following AI system planning phase steps in the right order by letter.\n A. Identify laws that apply\n B. Determine the business problem to be solved by the AI system\n C. Identify necessary data for the AI system\n D. Determine the specific use cases\n E. Identify gaps and risks to the use cases",
         "options": [
             "A. B, D, A, E, C",
             "B. A, B, C, D, E",
@@ -242,7 +242,7 @@
         "rationale": "While there are other steps involved in planning to introduce an AI system to an organization, and some steps may occur more than once, the general order of those listed is: Determine the business problem, Determine specific use case(s), Identify laws that apply, Identify use case gaps and risks, Identify the data that will be needed. By having a defined process, beginning with whether the AI tool solves a specific business issue, you help to guide responsible and appropriate AI use within your organization."
     },
     {
-        "question": "23. What is the main purpose of conducting regular audits of an AI model?",
+        "question": "What is the main purpose of conducting regular audits of an AI model?",
         "options": [
             "A. To verify the cost of the AI system is offset by profits.",
             "B. To ensure that the model has enough data for viable processing.",
@@ -253,7 +253,7 @@
         "rationale": "Regular audits are conducted to ensure that the AI model operates fairly, reliably, and complies with applicable laws and ethical standards. This helps identify and address issues such as bias, performance deterioration or legal non-compliance."
     },
     {
-        "question": "24. Which of the following is NOT true about the relationship of explainability and transparency as they relate to AI?",
+        "question": "Which of the following is NOT true about the relationship of explainability and transparency as they relate to AI?",
         "options": [
             "A. They are synonymous.",
             "B. They support trustworthy AI.",
@@ -264,7 +264,7 @@
         "rationale": "Both are types of documentation that help users understand how the system produces its outputs. Both support trustworthy AI as defined by NIST, OECD and others. 'Explainability and transparency are distinct characteristics that support each other. Transparency can answer the question of 'what happened' in the system. Explainability can answer the question of 'how' a decision was made in the system' (NIST AI RMF, 3.5 Explainable and Interpretable). They are not synonymous. The words do not have nearly the same meaning but can be presented in ways that may make this appear to be the case."
     },
     {
-        "question": "25. A regulator has ruled that the AI model used by some features of your product should not be used in its jurisdiction. What is the most robust way of reacting to this situation?",
+        "question": "A regulator has ruled that the AI model used by some features of your product should not be used in its jurisdiction. What is the most robust way of reacting to this situation?",
         "options": [
             "A. Shut down the service in the jurisdiction to pressure the regulator to change its position.",
             "B. Create a second, separate version of the application and deploy it to users in the jurisdiction.",
@@ -275,7 +275,7 @@
         "rationale": "Feature flags can be toggled without major engineering efforts, and keeping the model offline during regulatory negotiations avoids unnecessary confrontations, such as requiring a redeploy."
     },
     {
-        "question": "26. What is a key recommendation for assessing the reliability of general-purpose AI models after deployment?",
+        "question": "What is a key recommendation for assessing the reliability of general-purpose AI models after deployment?",
         "options": [
             "A. Limit assessments to specific use cases.",
             "B. Use only quantitative metrics for evaluation.",
@@ -319,7 +319,7 @@
         "rationale": "While all the principles should be considered, there is little in the question which focuses on growth, prosperity and global development objectives (sustainable development and well-being). The use of O Ltd. could present concerns about the rule of law, human rights, democratic values (human-centered value and fairness), and privacy and digital security (robustness, security and safety). Using a pretrained algorithm would present concerns around the factors and logic used to make the decisions (transparency and explainability)."
     },
     {
-        "question": "30. Which of the following is the most effective way for an AI developer to mitigate the risk of copyright infringement in developing and training an AI system?",
+        "question": "Which of the following is the most effective way for an AI developer to mitigate the risk of copyright infringement in developing and training an AI system?",
         "options": [
             "A. Confirm that any picture of a person the system generates does not resemble a living person.",
             "B. Confirm that the output is factually accurate and fully responds to each of the training prompts.",
@@ -330,7 +330,7 @@
         "rationale": "Copyright law recognizes that a 'fair use' of existing copyright material is permissible and does not constitute copyright infringement. By ensuring that all material used for training constitutes a 'fair use' of existing work, the developer can most effectively mitigate its potential for copyright infringement. While the other options may be relevant considerations in developing and training an AI model, they do not implicate or bear upon whether the developer may be liable for copyright infringement."
     },
     {
-        "question": "31. Which of the following is NOT a key feature in determining what laws apply to the deployment of an AI model?",
+        "question": "Which of the following is NOT a key feature in determining what laws apply to the deployment of an AI model?",
         "options": [
             "A. The sector in which the model is being used.",
             "B. The technology stack used to develop the model.",
@@ -341,7 +341,7 @@
         "rationale": "A technology stack is the collection of frameworks, tools, platforms and libraries used to build and deploy AI. While including the laws that apply to the jurisdiction(s) in which the AI tool will be deployed is important when building the technology stack, the stack itself is not specifically subject to those laws. There may be laws based on the model's training on personal information or copyrighted material, jurisdiction-specific laws, and sector-specific laws (e.g., for the healthcare sector)."
     },
     {
-        "question": "32. Why should an AI developer separate data into training and test sets?",
+        "question": "Why should an AI developer separate data into training and test sets?",
         "options": [
             "A. To create models that can be trained quickly.",
             "B. To reduce the inherent biases in stochastic gradient descent.",
@@ -352,7 +352,7 @@
         "rationale": "It is best practice to separate training and test sets to ensure any random biases in the training set do not carry over into the final model. In machine learning, overfitting occurs when an algorithm fits too closely or even exactly to its training data, resulting in a model that can't make accurate predictions or conclusions from any data other than the training data."
     },
     {
-        "question": "33. When considering the implementation of AI systems, how should companies educate users to best address their concerns?",
+        "question": "When considering the implementation of AI systems, how should companies educate users to best address their concerns?",
         "options": [
             "A. Abort the AI system to avoid addressing user concerns.",
             "B. Assume that users will self-educate through online resources.",
@@ -363,7 +363,7 @@
         "rationale": "To effectively address user concerns, companies should provide comprehensive and accessible information regarding the AI system. This includes educating users on the capabilities and limitations of AI to ensure that they have a balanced and realistic understanding of the AI technology in place."
     },
     {
-        "question": "34. Which of the following is a key element in ensuring responsible data governance when deploying an AI model?",
+        "question": "Which of the following is a key element in ensuring responsible data governance when deploying an AI model?",
         "options": [
             "A. Storing all data indefinitely to allow future analysis.",
             "B. Implementing data minimization and retention limits.",
@@ -374,7 +374,7 @@
         "rationale": "Responsible data governance requires collecting only the necessary data and enforcing retention limits to comply with privacy regulations like GDPR. It ensures that data usage is both relevant and legally compliant."
     },
     {
-        "question": "35. Alex is working for a public transit agency that is building out its AI program. He is collaborating with a local university to work on an AI project that involves what the NIST AI Risk Management Framework defines as social responsibility. Which proposal below best aligns with the concepts of social responsibility?",
+        "question": "Alex is working for a public transit agency that is building out its AI program. He is collaborating with a local university to work on an AI project that involves what the NIST AI Risk Management Framework defines as social responsibility. Which proposal below best aligns with the concepts of social responsibility?",
         "options": [
             "A. Using AI-assisted software to analyze anonymized ridership data to fulfill government reporting requirements.",
             "B. Attaching sensors on buses to determine and assess heavy traffic periods on specific routes to provide accurate travel time to passengers.",
@@ -385,7 +385,7 @@
         "rationale": "NIST refers to the organization's social responsibility as considering the 'impacts of its decisions and activities on society and the environment through transparent and ethical behavior.' While each of these are important or useful in one way or another, providing ride assistance to disabled customers meets the goal of ethical social behavior. By pseudonymizing the information and the service itself, the company is providing a socially responsible service that protects the individual."
     },
     {
-        "question": "36. The engineering team is working on training an AI model with a large, new dataset culled from social media. The team has built out the model to predict trends in car buying for the coming year based on social media posts. The AI model has a clear bias toward one particular automotive model. It turns out the recent data input was pulled when the car was featured in a blockbuster Hollywood movie. This is an example of which type of AI bias?",
+        "question": "The engineering team is working on training an AI model with a large, new dataset culled from social media. The team has built out the model to predict trends in car buying for the coming year based on social media posts. The AI model has a clear bias toward one particular automotive model. It turns out the recent data input was pulled when the car was featured in a blockbuster Hollywood movie. This is an example of which type of AI bias?",
         "options": [
             "A. Human-cognitive.",
             "B. Systemic and directed.",
@@ -429,7 +429,7 @@
         "rationale": "Best practice is to leverage existing governance models. NMATO currently has a hybrid model, given that risk evaluations happen locally with a coordination mechanism at the head office. Operating a hybrid model also allows for the combination of centralized and local governance. This is typically seen when a large organization assigns a main individual responsibility for AI-related affairs, and the local entities then fulfill and support the policies and directives from the central governing body."
     },
     {
-        "question": "40. ABC Corp is negotiating a contract with a vendor for a generative AI system to be used by ABC Corp's marketing team. Which of the following would be of least concern to ABC Corp when negotiating the agreement?",
+        "question": "ABC Corp is negotiating a contract with a vendor for a generative AI system to be used by ABC Corp's marketing team. Which of the following would be of least concern to ABC Corp when negotiating the agreement?",
         "options": [
             "A. ABC Corp not having copyright in the output generated by the vendor's AI system.",
             "B. ABC Corp not having a patent in order to use the algorithms of the vendor's AI system.",
@@ -440,7 +440,7 @@
         "rationale": "ABC Corp does not need its own patent to use the vendor's AI system since the vendor would permit ABC Corp to use any patent the vendor had (if any). The other options relate to ensuring that ABC Corp can use the vendor's AI system while maintaining its own IP rights or not infringing the IP rights of others, which are issues particularly pertinent to generative AI."
     },
     {
-        "question": "41. Brad is the Chief Technology Officer for Chip Zone, a chip manufacturer for the video game industry. The business has grown dramatically over the past two years and Brad needs an additional engineer to keep up with demand for new gaming chips. Brad prompts ChatGPT to draft a job description for his talent recruiters to use in advertising the engineering position. Which of the following results should Brad NOT include in the job description?",
+        "question": "Brad is the Chief Technology Officer for Chip Zone, a chip manufacturer for the video game industry. The business has grown dramatically over the past two years and Brad needs an additional engineer to keep up with demand for new gaming chips. Brad prompts ChatGPT to draft a job description for his talent recruiters to use in advertising the engineering position. Which of the following results should Brad NOT include in the job description?",
         "options": [
             "A. The successful applicant will be a collaborative team player, detail-oriented, with creative problem-solving skills. They must provide two verifiable references from an employer or a recognized educator in the field.",
             "B. The successful applicant must demonstrate appropriate skills in chip design and engineering with a minimum of two years' experience and must be able to work 40 hours per week onsite at the ChipZone headquarters.",
@@ -451,7 +451,7 @@
         "rationale": "The response in D violates the policy against bias and discrimination because it is male gender-specific and uses slang in such a way that could be viewed as discriminatory against women, non-binary individuals and older applicants. It also discriminates against applicants who may be equally qualified but received education at a lower-ranked school or a school outside of the United States, which may indicate ethnic discrimination."
     },
     {
-        "question": "42. Nolan is in the IT procurement department of Happy Customer Inc., a provider of call center solutions. Other companies are using Happy Customer Inc. services to help their clients with easy, first-level support requests. Happy Customer Inc. wants to offer its B2B clients a new text-based chatbot solution that offers the right answers to a given set of questions. What type of AI model should Nolan look for?",
+        "question": "Nolan is in the IT procurement department of Happy Customer Inc., a provider of call center solutions. Other companies are using Happy Customer Inc. services to help their clients with easy, first-level support requests. Happy Customer Inc. wants to offer its B2B clients a new text-based chatbot solution that offers the right answers to a given set of questions. What type of AI model should Nolan look for?",
         "options": [
             "A. A robotics model.",
             "B. A statistical model.",
@@ -462,7 +462,7 @@
         "rationale": "A decision tree model predicts an outcome based on a flowchart of questions and answers. A statistical model is used to model the relationships between two variables. A speech recognition model is used to analyze speech; e.g., for voice assistants. A robotics model is based on a multidisciplinary field that encompasses the design, construction, operation and programming of robots and allows AI systems and software to interact with the physical world without human intervention."
     },
     {
-        "question": "43. EuDizzy sells stuffed polyester toys in its shop aimed at children. The toys can respond to questions from the children via a wifi connection to an AI system on EuDizzy's servers. To maximize profits the toys are sold in the shop at prices based on an algorithm which considers what the child looks like and what similar customers were willing to pay for it previously. Which pair of laws will EuDizzy need to consider most when designing and selling the toys?",
+        "question": "EuDizzy sells stuffed polyester toys in its shop aimed at children. The toys can respond to questions from the children via a wifi connection to an AI system on EuDizzy's servers. To maximize profits the toys are sold in the shop at prices based on an algorithm which considers what the child looks like and what similar customers were willing to pay for it previously. Which pair of laws will EuDizzy need to consider most when designing and selling the toys?",
         "options": [
             "A. Child labour laws; copyright laws.",
             "B. Manufacturing laws; medical device laws.",
@@ -473,7 +473,7 @@
         "rationale": "Discrimination laws and consumer protection laws will both be relevant to evaluating the proposed pricing strategy to avoid discriminating against children in protected classes (e.g. race or gender) based on images and to ensure fair pricing. While data protection laws will also be relevant to the pricing strategy and the images collected, and copyright laws will be relevant to the inputs and outputs of the AI system, animal welfare laws will not be relevant to toys made from polyester. Child labour laws, and manufacturing laws are not directly relevant to the issues raised. The toys do not claim to be a medical device."
     },
     {
-        "question": "44. A company uses automated decision-making via an AI system to evaluate and subsequently accept or deny loan applications from potential customers. A customer (data subject) who is denied might use the process of redress because of the denial. Which of the following is a component of the right to redress?",
+        "question": "A company uses automated decision-making via an AI system to evaluate and subsequently accept or deny loan applications from potential customers. A customer (data subject) who is denied might use the process of redress because of the denial. Which of the following is a component of the right to redress?",
         "options": [
             "A. Review the privacy notice.",
             "B. Register a formal complaint.",
@@ -484,7 +484,7 @@
         "rationale": "The data subject would use the process of redress to make a formal complaint or request a review of the automated decision."
     },
     {
-        "question": "45. Which of the following is an important reason to continuously improve and maintain deployed models by tuning and retraining them with new data and human feedback?",
+        "question": "Which of the following is an important reason to continuously improve and maintain deployed models by tuning and retraining them with new data and human feedback?",
         "options": [
             "A. To comply with various legal and regulatory requirements.",
             "B. To maintain the system's relevance and effectiveness over time.",
@@ -495,7 +495,7 @@
         "rationale": "This option best captures one of the key objectives of continuously improving and maintaining models. Other reasons include adapting the model to evolving data and addressing potential bias. No model can achieve perfect accuracy, and continuous improvement aims to minimize errors, not eliminate them entirely. While continuous training can improve model performance over time, it is not primarily a cost-saving measure. Laws and regulations might necessitate responsible AI practices that are aided by training on new data, but the concept of continuous improvement focuses more on enhancing the model's real-world effectiveness and fairness."
     },
     {
-        "question": "46. When an organization performs an existing function in a new way with the help of AI, which of the following must the organization consider during the planning stage?",
+        "question": "When an organization performs an existing function in a new way with the help of AI, which of the following must the organization consider during the planning stage?",
         "options": [
             "A. What the user interface will look like.",
             "B. What laws and regulations will apply.",
@@ -506,7 +506,7 @@
         "rationale": "Prior to incorporating AI into existing functions, the organization should determine which laws and regulations apply and assess the AI technology's compliance with those laws and regulations. Depending on the AI function and use case, the organization should consider the applicability of privacy, security, safety, employment discrimination and intellectual property laws and regulations. The user interface appearance might be considered during the planning process but is not a requirement. The impact to employees and audit and review processes occurs later in the AI lifecycle."
     },
     {
-        "question": "47. Which aspect of AI development is most likely to be affected by existing data privacy laws such as the GDPR or CCPA?",
+        "question": "Which aspect of AI development is most likely to be affected by existing data privacy laws such as the GDPR or CCPA?",
         "options": [
             "A. The efficiency of the AI algorithms.",
             "B. The physical location of AI infrastructure.",
@@ -550,7 +550,7 @@
         "rationale": "Performance inconsistent with intended use does not always necessarily mean that a system should be deactivated or decommissioned. Mitigated risks indicate that potential issues have been identified and addressed proactively, reducing the likelihood of adverse outcomes. This approach not only ensures the safe and reliable operation of AI systems but also builds trust with users and stakeholders. Not aligning risks (Answer A) would typically signal that the system needs to be reviewed for possible deactivation or major modification to meet new thresholds, rather than justifying continued use. Knowing the limitations doesn't resolve the underlying performance issue. Lastly: even though transferring data to a new system might be burdensome or introduce new risks, this doesn't justify continuing to use a system that is no longer performing as intended."
     },
     {
-        "question": "51. As the privacy officer of a large commercial organization, which of the following will NOT require you to re-evaluate existing data privacy policies?",
+        "question": "As the privacy officer of a large commercial organization, which of the following will NOT require you to re-evaluate existing data privacy policies?",
         "options": [
             "A. A jurisdiction in which you operate enacted a new law governing the use of AI in the private sector.",
             "B. The privacy department has expanded from ten part-time employees to twelve full-time employees.",
@@ -561,7 +561,7 @@
         "rationale": "Either using AI to implement an existing program, implementing a new program using AI, or becoming subject to new regulations will require you to evaluate and potentially update your organization's data privacy policies. It may be that the creation of a privacy department, or a substantial increase in size, will require updating policies to allow the newly-created or expanded department to take on new roles and responsibilities, but a marginal change can be handled in the ordinary policy update cadence."
     },
     {
-        "question": "52. A newly developed AI system in your organization is almost ready to deploy. The engineers who collaborated on the project are the most appropriate personnel to ensure which of the following is in place before the system is deployed?",
+        "question": "A newly developed AI system in your organization is almost ready to deploy. The engineers who collaborated on the project are the most appropriate personnel to ensure which of the following is in place before the system is deployed?",
         "options": [
             "A. A change management plan to support widespread internal adoption.",
             "B. A new company policy to address AI developer, deployer and user risks.",
@@ -572,7 +572,7 @@
         "rationale": "This is the only option that describes one of the four key steps in the implementation phase: monitoring. The prompt states the actors involved are engineers who worked directly on the project. These engineers can be assumed to have the technical and project knowledge necessary to establish continuous monitoring for deviations in accuracy or irregular decisions made by the model. The other options listed should also be in place before the system is deployed but are best addressed by the chief privacy officer, AI governance committee, office for responsible AI, ethics board or other steering groups."
     },
     {
-        "question": "53. Morgan has just started their position as an AI governance lead for a pharmaceutical company. They have been tasked with ensuring AI governance principles are integrated across the company. What is one of the principles that should be applied consistently?",
+        "question": "Morgan has just started their position as an AI governance lead for a pharmaceutical company. They have been tasked with ensuring AI governance principles are integrated across the company. What is one of the principles that should be applied consistently?",
         "options": [
             "A. Adopt a dissenting viewpoint.",
             "B. Select a team that is process focused.",
@@ -583,7 +583,7 @@
         "rationale": "Core objectives to ensure AI governance principles apply an integrated focus include adopting a pro-innovation mindset, ensuring the AI ethics framework is law, remaining industry and technology agnostic, focusing the team on outcomes and ensuring there is consensus in planning and design. Financial considerations are important, but they should not be the primary consideration. Adopting a dissenting viewpoint will likely only silo AI governance rather than integrate it into the company. Finally, while the team can follow a process, it should focus on the outcomes. There may be many pathways to integrate AI governance into the company to achieve successful outcomes."
     },
     {
-        "question": "54. WonderTemp, a temporary staffing company, terminated most of its employees after implementing a virtual assistant to help write emails, policies, marketing materials and responses to client questions. Three months later, WonderTemp learns that four of its biggest clients are not renewing their contracts because the work product from WonderTemp is full of inaccuracies. Based on these facts, what types of harm has WonderTemp suffered because of its reliance on the virtual assistant?",
+        "question": "WonderTemp, a temporary staffing company, terminated most of its employees after implementing a virtual assistant to help write emails, policies, marketing materials and responses to client questions. Three months later, WonderTemp learns that four of its biggest clients are not renewing their contracts because the work product from WonderTemp is full of inaccuracies. Based on these facts, what types of harm has WonderTemp suffered because of its reliance on the virtual assistant?",
         "options": [
             "A. Legal and regulatory harm.",
             "B. Individual and societal harm.",
@@ -616,7 +616,7 @@
         "rationale": "When a company is developing a customer profile, it is using information about the customer's previous behavior to predict future purchasing behavior. Personalization models aim to create a unique experience based on the needs and preference of each customer."
     },
     {
-        "question": "57. How do you ensure your AI system does not develop bias over time?",
+        "question": "How do you ensure your AI system does not develop bias over time?",
         "options": [
             "A. You train a specialized customer service representative to handle any complaints about bias.",
             "B. You implement an automated test suite to check for bias and monitor the results continuously.",
@@ -627,7 +627,7 @@
         "rationale": "Automated testing is the only method that ensures full coverage of the user base. Not all users respond to surveys or contact customer service. Checking the system yourself does not cover all corner cases."
     },
     {
-        "question": "58. The recruiting department for Company X wants to use AI to help it identify the best external candidates and fast-track the hiring process for open positions. It trains the AI program using the resumes of top-performing software engineers across the company. The AI determines that men between the ages of 25 and 35 are the best candidates. This is an example of what type of bias in the AI system?",
+        "question": "The recruiting department for Company X wants to use AI to help it identify the best external candidates and fast-track the hiring process for open positions. It trains the AI program using the resumes of top-performing software engineers across the company. The AI determines that men between the ages of 25 and 35 are the best candidates. This is an example of what type of bias in the AI system?",
         "options": [
             "A. Sampling bias.",
             "B. Temporal bias.",
@@ -638,7 +638,7 @@
         "rationale": "The data is skewed toward a subset of individuals due to the limited group selected (internal employees) to train the program the sample. The sample data should be broader than just those individuals currently employed by the company. The larger the sample, the more diverse the results will be. Temporal bias does not apply because the biased outcome is not due to unbalanced data sampling over time. Confirmation bias does not apply because the recruiters did not seek out information to confirm existing beliefs, but trained the AI using performance statistics. Projection bias does not apply as this type of bias is based on assuming others share our preferences, beliefs and attitudes, and there is no indication that this is the case."
     },
     {
-        "question": "59. In your role as Chief AI Officer, you discover that your AI system unintentionally collects geolocation data from users during its normal operations, which was not disclosed in your company's privacy policy. According to the NIST AI Risk Management Framework (RMF), which function focuses on effectively addressing this unintentional data collection and managing associated regulatory risk?",
+        "question": "In your role as Chief AI Officer, you discover that your AI system unintentionally collects geolocation data from users during its normal operations, which was not disclosed in your company's privacy policy. According to the NIST AI Risk Management Framework (RMF), which function focuses on effectively addressing this unintentional data collection and managing associated regulatory risk?",
         "options": [
             "A. Map.",
             "B. Manage.",
@@ -649,7 +649,7 @@
         "rationale": "The 'Manage' function focuses on mitigating risks, which includes identifying and addressing any unauthorized data collection that could violate privacy laws."
     },
     {
-        "question": "60. What is the role of U.S. federal agencies in regulating and overseeing the development and use of AI systems?",
+        "question": "What is the role of U.S. federal agencies in regulating and overseeing the development and use of AI systems?",
         "options": [
             "A. To discourage the development and adoption of AI systems, including private use.",
             "B. To regulate the development and use of AI systems, including various liability issues.",
@@ -693,7 +693,7 @@
         "rationale": "To limit potential misuse and liability of an AI system, an organization must properly document the decisions made regarding an AI system. Otherwise, it is easy for the system to be used for a purpose not considered and approved."
     },
     {
-        "question": "64. Which of the following is an example of societal harm in AI?",
+        "question": "Which of the following is an example of societal harm in AI?",
         "options": [
             "A. Reputational harm to an organization.",
             "B. Housing discrimination against a family.",
@@ -704,7 +704,7 @@
         "rationale": "The spread of disinformation causes harm to a society by making it difficult or impossible for individuals to verify whether the information they are accessing is accurate or not. This undermines the individual's faith in their societal structure, causing social polarization, unrest and mistrust in the decision-making process of policy makers. The internet has made the ability to spread disinformation a much more rapid process, complicating these issues further. Reputational harm to an organization is an example of organization harm; housing discrimination is an example of individual harm; and insurance discrimination is an example of AI bias that causes individual harm."
     },
     {
-        "question": "65. How does addressing model drift contribute to responsible AI governance?",
+        "question": "How does addressing model drift contribute to responsible AI governance?",
         "options": [
             "A. By increasing model training time to allow for additional review.",
             "B. By making models more complex to better mimic real-world situations.",
@@ -737,7 +737,7 @@
         "rationale": "The use of AI for untargeted scraping of the internet for facial images to build up or expand databases is classified as a prohibited use case of AI and, as such, any AI system used for this purpose will be banned. Therefore, if Starnet Ltd. has used an AI system for this purpose, as a multinational company, Starnet Ltd. would face an applicable threshold of penalty of a fine of up to 35 million euros or seven percent of the total worldwide turnover."
     },
     {
-        "question": "68. Your company is developing an AI system for global markets. This system involves personal data processing and some decision-making that may affect rights of the individuals. Part of your role as an AI governance professional is to ensure that the AI system complies with various international regulatory requirements. Which of the following approaches best aligns with a comprehensive understanding of and compliance with AI regulatory requirements in this situation?",
+        "question": "Your company is developing an AI system for global markets. This system involves personal data processing and some decision-making that may affect rights of the individuals. Part of your role as an AI governance professional is to ensure that the AI system complies with various international regulatory requirements. Which of the following approaches best aligns with a comprehensive understanding of and compliance with AI regulatory requirements in this situation?",
         "options": [
             "A. Focus on the EU AI Act, as it is the most comprehensive regulation, since compliance with it will ensure compliance with all other international regulations that apply to AI.",
             "B. Develop a compliance strategy based on the strictest requirements in various regulations, including the EU AI Act, GDPR and HIPAA, then harmonize it into a unified compliance framework.",
@@ -748,7 +748,7 @@
         "rationale": "This option represents a balanced and comprehensive approach to AI regulatory compliance by acknowledging the need to understand and integrate multiple international requirements, ensuring adherence to the highest standards of AI compliance, data privacy and other regulatory considerations."
     },
     {
-        "question": "69. As technology continues to advance, companies, scientists and technologists are adopting a human-centric approach to develop AI. What specifically characterizes an AI system as 'human-centric'?",
+        "question": "As technology continues to advance, companies, scientists and technologists are adopting a human-centric approach to develop AI. What specifically characterizes an AI system as 'human-centric'?",
         "options": [
             "A. It prioritizes technical advancement without considering human input, needs or experiences.",
             "B. It disregards technological advancements and societal technological needs and rely entirely on human input.",
@@ -759,7 +759,7 @@
         "rationale": "Human-centric AI is AI designed to put humans before the machine by acknowledging human abilities and ingenuity. HCAI is AI that enhances and augments human abilities rather than displacing them. HCAI aims to preserve human control to ensure that AI meets human needs."
     },
     {
-        "question": "70. A financial institution aims to develop a model for detecting fraudulent credit card transactions. It possesses a history of transaction data in which instances of fraud and non-fraud are clearly labeled and explicitly identified. What is the appropriate machine learning technique the financial institution should adopt?",
+        "question": "A financial institution aims to develop a model for detecting fraudulent credit card transactions. It possesses a history of transaction data in which instances of fraud and non-fraud are clearly labeled and explicitly identified. What is the appropriate machine learning technique the financial institution should adopt?",
         "options": [
             "A. Supervised.",
             "B. Unsupervised.",
@@ -770,7 +770,7 @@
         "rationale": "In this situation, where the financial institution has a labeled dataset with instances of fraud and non-fraud clearly identified, the appropriate machine learning technique is supervised learning. In supervised learning, the model is trained on labeled data, and it learns to make predictions or classifications based on the provided labels. The goal is to identify patterns in the labeled data that can be used to accurately predict the labels for new, unseen instances."
     },
     {
-        "question": "71. Supermarket Limited is a global supermarket chain and is rapidly introducing AI systems into its business to drive efficiency and quality. Its human resources, marketing and quality control departments are the priority. Supermarket Limited's AI Officer is putting together a cross-functional team of lawyers to help advise on the AI aspects of these projects, but due to budgetary constraints the team can only consist of three lawyers. Which of the following disciplines would be most appropriate for the AI Officer to focus on?",
+        "question": "Supermarket Limited is a global supermarket chain and is rapidly introducing AI systems into its business to drive efficiency and quality. Its human resources, marketing and quality control departments are the priority. Supermarket Limited's AI Officer is putting together a cross-functional team of lawyers to help advise on the AI aspects of these projects, but due to budgetary constraints the team can only consist of three lawyers. Which of the following disciplines would be most appropriate for the AI Officer to focus on?",
         "options": [
             "A. Employment, patents, anti-trust.",
             "B. Litigation, healthcare, product safety.",
@@ -803,7 +803,7 @@
         "rationale": "Since the doctors' notes are in free-form text, natural language processing would be the most likely type of machine learning used. NLP is specifically used for analyzing text and natural language. Regression is used typically for predicting numerical values where there are underlying variables that are numeric. A decision tree is used typically for classification where a limited number of variables are involved. Dimensionality reduction is used to reduce the number of variables and other extraneous factors, so is not likely to be used, given the other options."
     },
     {
-        "question": "74. When initiating an AI governance program, which of the following statements best reflects a strategic approach to effectively engaging leadership?",
+        "question": "When initiating an AI governance program, which of the following statements best reflects a strategic approach to effectively engaging leadership?",
         "options": [
             "A. Identify leaders already using AI who see opportunities for differentiation through improved governance.",
             "B. Postpone leadership engagement until the AI program is fully implemented to avoid an overly complicated journey.",
@@ -814,7 +814,7 @@
         "rationale": "In the context of AI governance, it is crucial to engage leaders who not only have experience with AI, but also recognize the potential for differentiation through responsible practices. This approach ensures leadership alignment with the AI governance program goals and helps in understanding the value it brings."
     },
     {
-        "question": "75. The EU AI Act and NIST AI Risk Management Framework are both pursuing the dual purposes of promoting the uptake of AI and addressing the risks associated with its use. Which of the following is one of the main differences between the EU AI Act and NIST AI RMF?",
+        "question": "The EU AI Act and NIST AI Risk Management Framework are both pursuing the dual purposes of promoting the uptake of AI and addressing the risks associated with its use. Which of the following is one of the main differences between the EU AI Act and NIST AI RMF?",
         "options": [
             "A. The EU AI Act is underpinned by a risk-based approach, while the NIST AI RMF is a horizontal regulation.",
             "B. The EU AI Act is applicable to EU-based companies only, while the NIST AI RMF has an extraterritorial effect.",
@@ -825,7 +825,7 @@
         "rationale": "The NIST AI Risk Management Framework is intended for voluntary use and to improve the ability to incorporate trustworthiness considerations into the design, development, use and evaluation of AI products, services and systems. The EU AI Act imposes comprehensive mandatory compliance requirements on high-risk AI with respect to, among other things, risk mitigation, data governance, detailed documentation, human oversight, transparency, robustness, accuracy and cybersecurity. The EU AI Act requires mandatory conformity assessments and fundamental rights impact assessments. It also provides a right for citizens to launch complaints about AI systems and receive explanations about decisions based on high-risk AI systems that impact their rights."
     },
     {
-        "question": "76. Robotic processing automation is an emerging type of artificial intelligence. Which of the following does NOT describe RPA?",
+        "question": "Robotic processing automation is an emerging type of artificial intelligence. Which of the following does NOT describe RPA?",
         "options": [
             "A. Machines that mimic human actions on digital systems.",
             "B. Software robots that are used to automate rule-based tasks.",
@@ -836,7 +836,7 @@
         "rationale": "The intent of robotic processing automation is to 'mimic' human behavior by leveraging intelligent systems. The goal of this is to decrease human intervention by automating tasks to increase efficiency of business processes, and not rely on humans to complete tasks."
     },
     {
-        "question": "77. A retailer plans to implement facial recognition in physical stores. Which of the following measures should the retailer take to comply with regulatory requirements?",
+        "question": "A retailer plans to implement facial recognition in physical stores. Which of the following measures should the retailer take to comply with regulatory requirements?",
         "options": [
             "A. Disclose the practice of facial recognition to consumers.",
             "B. Train the employees not to reveal the use of facial recognition technology.",
@@ -847,7 +847,7 @@
         "rationale": "Transparency is a key value in privacy and responsible AI. Failure to disclose risks of harm to consumers can also lead to violations of the FTC Act section 5, as well as existing privacy laws such as the GDPR, and potentially to violations of emerging laws. Companies that use facial recognition in physical stores should, at a minimum, consider disclosing the practice to consumers."
     },
     {
-        "question": "78. Company N works in the field of disability benefits and wants to use AI to determine who is most likely to benefit from its services by filtering applications. Company N's privacy officer is concerned about unintended serious impacts of filtering applications. What is a negative impact the privacy officer should consider when analyzing the proposed project?",
+        "question": "Company N works in the field of disability benefits and wants to use AI to determine who is most likely to benefit from its services by filtering applications. Company N's privacy officer is concerned about unintended serious impacts of filtering applications. What is a negative impact the privacy officer should consider when analyzing the proposed project?",
         "options": [
             "A. Impacting an employee's job.",
             "B. Making individuals uncomfortable.",
@@ -858,7 +858,7 @@
         "rationale": "The privacy officer should examine the project carefully to determine if there will be an unintended result of discrimination against a particular group of individuals who may share a trait that will accidentally cause the AI to filter out their applications for disability benefits, even though they would normally qualify."
     },
     {
-        "question": "79. Which of the following is NOT a key component of AI governance policies to ensure oversight and accountability across all AI lifecycle stages?",
+        "question": "Which of the following is NOT a key component of AI governance policies to ensure oversight and accountability across all AI lifecycle stages?",
         "options": [
             "A. Implementing a data privacy compliance program.",
             "B. Establishing a centralized AI governance committee.",
@@ -869,7 +869,7 @@
         "rationale": "While innovation and experimentation are essential for AI development, they should be balanced with robust governance to ensure ethical and responsible AI practices. The other options (A, B and C) are all critical components of AI governance, as they provide oversight, risk management and compliance. A culture of innovation without proper governance can lead to unintended consequences, such as biased models or privacy breaches."
     },
     {
-        "question": "80. Kim is expanding their governance, risk and compliance role at their organization to include the NIST AI Risk Management Framework. Kim is using the four core functions to lay out their project to present to management. Which of the following is the step for the measure function?",
+        "question": "Kim is expanding their governance, risk and compliance role at their organization to include the NIST AI Risk Management Framework. Kim is using the four core functions to lay out their project to present to management. Which of the following is the step for the measure function?",
         "options": [
             "A. Risk management is cultivated and present.",
             "B. Identified risks are assessed, analyzed or tracked.",
@@ -880,7 +880,7 @@
         "rationale": "The measure function involves quantifying risks and their related impacts, including tracking trustworthiness and social impacts. Through this stage, organizations can balance any trade-offs necessary and ensure the risks are mitigated where possible."
     },
     {
-        "question": "81. An organization is in the process of integrating an open-source AI model into its operations and needs to evaluate the vendor agreement. Which of the following considerations is most critical for ensuring that the organization understands potential risks and obligations related to data privacy and intellectual property?",
+        "question": "An organization is in the process of integrating an open-source AI model into its operations and needs to evaluate the vendor agreement. Which of the following considerations is most critical for ensuring that the organization understands potential risks and obligations related to data privacy and intellectual property?",
         "options": [
             "A. Evaluate the compliance of the AI model with existing organizational policies to ensure consistency with internal practices and procedures.",
             "B. Review the license type of the open-source AI model to ensure it aligns with the organization's commercial goals and does not impose restrictions on distribution.",
@@ -891,7 +891,7 @@
         "rationale": "Understanding the terms regarding the model's training data is essential for assessing data privacy risks, potential intellectual property issues, and compliance with data protection regulations. Ownership and usage rights of training data can significantly impact the organization's obligations and rights, especially in relation to user data and the use of derivative works from the model. While reviewing the license type is important, it focuses more on distribution and commercial goals rather than the immediate risks associated with data privacy and intellectual property, which are paramount when integrating an AI model that handles sensitive data. Liability limitations are also important, but this option does not directly address the critical elements of data usage and ownership, which are vital for privacy compliance and the ethical use of AI. And while alignment with internal policies is beneficial, it does not address the external risks tied to data privacy and intellectual property outlined in the vendor or open-source agreement. By focusing on C, organizations can better safeguard their interests and comply with relevant laws and regulations when leveraging open-source AI technologies."
     },
     {
-        "question": "82. Which of the following outline some of the necessary components of creating an AI governance structure? (Select all that apply)",
+        "question": "Which of the following outline some of the necessary components of creating an AI governance structure? (Select all that apply)",
         "type": "multi-select",
         "options": [
             "A. Identify an executive champion",
@@ -904,7 +904,7 @@
         "rationale": "While identifying laws and establishing data lineage are important stages of AI implementation, they are not part of creating the governance structure. Typically, one would first determine whether an AI governance structure is already in place; then, if not, or if a new structure is needed, decide who the executive champion is and determine who will maintain the structure."
     },
     {
-        "question": "83. Which of the following is a key component of the NIST ARIA program for AI safety?",
+        "question": "Which of the following is a key component of the NIST ARIA program for AI safety?",
         "options": [
             "A. AI Ethics Guidelines.",
             "B. AI Governance Framework.",
@@ -915,7 +915,7 @@
         "rationale": "The NIST ARIA program (Artificial Intelligence Risk Assessment) is primarily focused on assessing and managing risks associated with AI systems. The AI Risk Assessment Framework is a central component of this program, providing a structured approach to identifying, assessing and mitigating risks. While the other options (AI Safety Assurance Framework, AI Ethics Guidelines and AI Governance Framework) are also important aspects of AI safety, they are not the central focus of the NIST ARIA program."
     },
     {
-        "question": "84. What is the purpose of a risk assessment in AI Governance?",
+        "question": "What is the purpose of a risk assessment in AI Governance?",
         "options": [
             "A. Test and validate the AI system.",
             "B. Establish priorities and allocate resources.",
@@ -926,7 +926,7 @@
         "rationale": "The purpose of a risk assessment is to identify the areas of greatest risk in an AI system so risk mitigation resources can be allocated appropriately. Risk assessments can also be used to generate metrics for tracking and managing priorities throughout the model development life cycle."
     },
     {
-        "question": "85. An India-based company has developed an AI system to assist recruiters for initial screening of resumes based on certain criteria, which can also be modified as per customer's needs. When considering expanding to the EU market, this type of technology would?",
+        "question": "An India-based company has developed an AI system to assist recruiters for initial screening of resumes based on certain criteria, which can also be modified as per customer's needs. When considering expanding to the EU market, this type of technology would?",
         "options": [
             "A. Require the company to register the tool with the EU database.",
             "B. Require the company to get approval by the relevant EU authority.",
@@ -937,7 +937,7 @@
         "rationale": "Under the EU AI Act, high-risk AI systems (like systems dealing with recruitment) would require a detailed conformity assessment before being deployed in the EU market. This assessment ensures that the AI system complies with all relevant regulations and standards, addressing potential risks related to privacy, security and discrimination."
     },
     {
-        "question": "86. John is the AI governance lead for his EU-based company, XYZ. XYZ provides users with a virtual assistant. When exiting the system, users receive a notice which informs them they have interacted with an AI system and its responses may include hallucinations that should be reviewed by the user. John informs XYZ of his approval of this notice along with the way it is presented to him. Based on the information provided, why is XYZ not in compliance with the transparency requirements set out by the EU AI Act?",
+        "question": "John is the AI governance lead for his EU-based company, XYZ. XYZ provides users with a virtual assistant. When exiting the system, users receive a notice which informs them they have interacted with an AI system and its responses may include hallucinations that should be reviewed by the user. John informs XYZ of his approval of this notice along with the way it is presented to him. Based on the information provided, why is XYZ not in compliance with the transparency requirements set out by the EU AI Act?",
         "options": [
             "A. The notice is not GDPR compliant.",
             "B. The notice was not displayed in a timely manner.",
@@ -948,7 +948,7 @@
         "rationale": "As per the transparency obligations set forth in the EU AI Act, the notice that informs users they are using an AI system shall be provided, at the latest, at the time of first interaction or exposure to the AI system in question. In this case, the notice was provided as a response to the first prompt rather than being displayed to users at the time of the first interaction or exposure, before they enter a prompt."
     },
     {
-        "question": "87. Which of the following is a critical term to assess in an open-source AI vendor agreement regarding the use of the software?",
+        "question": "Which of the following is a critical term to assess in an open-source AI vendor agreement regarding the use of the software?",
         "options": [
             "A. Data Ownership.",
             "B. Marketing Rights.",
@@ -959,7 +959,7 @@
         "rationale": "Since the vendor is open source, it is critical to address clauses related to data ownership, to ensure no copyrighted data is being used without consent which could lead to infringement claims. Additionally, specifying in the agreement who ultimately owns the output will determine who has the right to use it and how it can be used."
     },
     {
-        "question": "88. DPIAs and AI conformity assessments are both important tools in evaluating privacy risk. Which of the following is a key component of both?",
+        "question": "DPIAs and AI conformity assessments are both important tools in evaluating privacy risk. Which of the following is a key component of both?",
         "options": [
             "A. A targeted mitigation plan.",
             "B. An effective consent model.",
@@ -970,7 +970,7 @@
         "rationale": "Both assessments should involve an assessment of risks, as well as a plan to mitigate such risks. Consent and anonymization may be needed depending on the process or system involved. While personal data is a component of a DPIA, it may or may not be for an AI conformity assessment."
     },
     {
-        "question": "89. How can human oversight influence the reduction of bias or discrimination in AI/ML models (algorithmic bias) in the initial stages of selecting data and defining goals?",
+        "question": "How can human oversight influence the reduction of bias or discrimination in AI/ML models (algorithmic bias) in the initial stages of selecting data and defining goals?",
         "options": [
             "A. Using only data scientists to handle data selection in AI/ML models ensures success in meeting set goals.",
             "B. Working with a variety of social experts ensures inclusive and unbiased data during the AI/ML model design.",
@@ -981,7 +981,7 @@
         "rationale": "Collaboration with social experts, such as psychologists, linguists and sociologists, provides diverse insights into human behavior and societal dynamics essential for identifying potential biases that may not be obvious to data scientists or software engineers."
     },
     {
-        "question": "90. What is the purpose of liability reform regarding liability for AI systems?",
+        "question": "What is the purpose of liability reform regarding liability for AI systems?",
         "options": [
             "A. To discourage the development and adoption of AI systems.",
             "B. To increase the legal risks and costs associated with AI systems.",
@@ -992,7 +992,7 @@
         "rationale": "Liability reform is the process of changing the legal rules and principles that govern the responsibility and accountability of parties who cause or contribute to damage or harm through AI systems."
     },
     {
-        "question": "91. When building an AI model, which of the following is a best practice for feature selection?",
+        "question": "When building an AI model, which of the following is a best practice for feature selection?",
         "options": [
             "A. Raw data is preferred to processed data.",
             "B. The more features used, the better the model performs.",
@@ -1003,7 +1003,7 @@
         "rationale": "Training and testing data must use the same features to ensure accuracy. There are trade-offs to adding model features in performance, and adding too many features can cause overfitting to the training data. Raw data needs to be processed before being added to the model, at the very least, for data cleaning purposes. Finally, personal information can be used as a feature, but only where necessary."
     },
     {
-        "question": "92. Company XBR is developing an AI system for a virtual assistant to be used in households. How would the development team incorporate the principles of human-centric design throughout the entire process, from conception to deployment?",
+        "question": "Company XBR is developing an AI system for a virtual assistant to be used in households. How would the development team incorporate the principles of human-centric design throughout the entire process, from conception to deployment?",
         "options": [
             "A. Ignoring privacy concerns to maximize data collection for refining the AI algorithms.",
             "B. Designing the virtual assistant to operate independently, without requiring user input.",
@@ -1014,7 +1014,7 @@
         "rationale": "The development team should rely on users' participation and feedback to incorporate the principles of human-centric design through the process, from development to deployment of the AI system. Human-centered AI learns from human input and collaboration, and continuously improves based on human feedback."
     },
     {
-        "question": "93. Which one of the following options contains elements that should be considered when building an AI incident response plan?",
+        "question": "Which one of the following options contains elements that should be considered when building an AI incident response plan?",
         "options": [
             "A. The security incident plan, which covers all requirements needed, includes required incident actions so the security team can oversee AI incident management.",
             "B. The third-party tools that are integrated into your system should be identified because, in the case of an incident, you might need to notify those third parties.",
@@ -1025,7 +1025,7 @@
         "rationale": "To understand third-party risk in the organization, it is necessary to identify all third-party tools that are integrated in the system. If there is an incident, the organization might need to notify the user of these third-party tools, as the incident might not only impact the tool owned by the organization."
     },
     {
-        "question": "94. The HR department of the EU-based CompanyX purchases an AI-enabled tool to optimize efficiency and resource allocation. The tool collects personal data, including special categories of personal data under the GDPR, for an automated rating of workers' performance and assignment of work. Given the context, the tool might be qualified as a high-risk AI system under the EU AI Act. Consequently, CompanyX must conduct tests against preliminarily defined metrics and probabilistic thresholds to identify risks and the most appropriate risk management measures. Since the tool will be used for automated decision-making affecting the privacy rights of employees, CompanyX must?",
+        "question": "The HR department of the EU-based CompanyX purchases an AI-enabled tool to optimize efficiency and resource allocation. The tool collects personal data, including special categories of personal data under the GDPR, for an automated rating of workers' performance and assignment of work. Given the context, the tool might be qualified as a high-risk AI system under the EU AI Act. Consequently, CompanyX must conduct tests against preliminarily defined metrics and probabilistic thresholds to identify risks and the most appropriate risk management measures. Since the tool will be used for automated decision-making affecting the privacy rights of employees, CompanyX must?",
         "options": [
             "A. Carry out a conformity assessment procedure after working with a representative in the EU.",
             "B. Draft the technical documentation and the required instructions for use once the tool is ready for use.",
@@ -1058,7 +1058,7 @@
         "rationale": "Synthetic data is specifically used to increase the accuracy of models. Using agent-based modeling, this process generates possible new threats that mimic real data. Effective AI requires a significant amount of data, so data minimization is not a good solution. Federated learning is a technique used to assist with training on private or sensitive data in a way that is compliant with privacy laws. It has nothing to do with finding unknown threats. Probabilistic graphical models are used to represent dependencies and correlations between features. It has no applicability in this context."
     },
     {
-        "question": "97. Which of the following is a crucial aspect of a deactivation policy for AI models?",
+        "question": "Which of the following is a crucial aspect of a deactivation policy for AI models?",
         "options": [
             "A. The ability to immediately shut down a model if it generates profits.",
             "B. Ensuring that only technical staff are aware of the deactivation process.",
@@ -1069,7 +1069,7 @@
         "rationale": "A deactivation policy ensures that an AI model can be safely and effectively shut down if it no longer complies with regulatory requirements or exhibits significant performance issues, thus reducing risks to users and stakeholders. However, disabling a model due to profits is clearly not in the company's best interest; and new versions of the same product should not require fully disabling the model since new versions should build upon the prior one and would therefore use the same or a similar model."
     },
     {
-        "question": "98. An organization wants to build a model to analyze content on social media by considering both textual content and associated images or videos. Which type of machine learning modeling technique is suitable in this scenario?",
+        "question": "An organization wants to build a model to analyze content on social media by considering both textual content and associated images or videos. Which type of machine learning modeling technique is suitable in this scenario?",
         "options": [
             "A. Regression.",
             "B. Multi-modal.",
@@ -1080,7 +1080,7 @@
         "rationale": "Multi-modal models are designed to process and integrate information from multiple modalities, making them well suited for tasks that involve diverse types of data, such as text, images and videos. In the given scenario, where the organization wants to analyze content on social media by developing a model that processes both textual content and associated images or videos, the resulting model would be regarded as multi-modal."
     },
     {
-        "question": "99. The engineering team within your company has been working on an AI tool for the past several months. After completion of planning, design and development, what is the next step?",
+        "question": "The engineering team within your company has been working on an AI tool for the past several months. After completion of planning, design and development, what is the next step?",
         "options": [
             "A. Perform a readiness assessment.",
             "B. Define the business requirements.",
@@ -1091,7 +1091,7 @@
         "rationale": "Although the other options reference some part of the AI development life cycle, these steps should be completed before commencement of the implementation phase and during system planning, design and development. After the completion of these activities, a readiness assessment will determine whether the technology is ready to deploy."
     },
     {
-        "question": "100. Which of the following activities is a best practice method to identify and mitigate predictable risks of secondary or unintended uses of AI models?",
+        "question": "Which of the following activities is a best practice method to identify and mitigate predictable risks of secondary or unintended uses of AI models?",
         "options": [
             "A. Developing model cards for AI systems.",
             "B. Implementing an AI governance strategy.",

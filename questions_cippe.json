@@ -1,57 +1,57 @@
 [
     {
-        "question": "1. How does the GDPR define ‘processing’?",
+        "question": "How does the GDPR define \u2018processing\u2019?",
         "options": [
             "A. Any act involving the collecting and recording of personal data.",
             "B. Any operation or set of operations performed on personal data or on sets of personal data.",
             "C. Any use or disclosure of personal data compatible with the collection purpose.",
-            "D. Any operation or set of operations performed by automated means on personal data." 
+            "D. Any operation or set of operations performed by automated means on personal data."
         ],
         "answer": "B",
-        "rationale": "Article 4(2) defines processing broadly as any operation performed on personal data, whether or not by automated means."        
+        "rationale": "Article 4(2) defines processing broadly as any operation performed on personal data, whether or not by automated means."
     },
     {
-        "question": "2. A breach of security leading to the accidental loss of personal data triggers notification obligations. How soon must a processor notify the controller according to Article 33(2) of the GDPR?",
+        "question": "A breach of security leading to the accidental loss of personal data triggers notification obligations. How soon must a processor notify the controller according to Article 33(2) of the GDPR?",
         "options": [
             "A. Within 48 hours after the breach occurred.",
             "B. Timing varies based on the data processing agreement.",
             "C. Without undue delay after becoming aware of the breach.",
-            "D. Depending on the laws of the controller’s country." 
+            "D. Depending on the laws of the controller\u2019s country."
         ],
         "answer": "C",
-        "rationale": "Processors must notify the controller without undue delay once aware of a personal data breach."        
+        "rationale": "Processors must notify the controller without undue delay once aware of a personal data breach."
     },
     {
-        "question": "3. Under the GDPR, when using personal data for direct marketing, controllers must do which of the following?",
+        "question": "Under the GDPR, when using personal data for direct marketing, controllers must do which of the following?",
         "options": [
             "A. Provide individuals with the categories of any third parties who will rely on the consent.",
             "B. Encrypt the personal data before using it for marketing.",
             "C. Disclose to individuals the specific lawful basis for the collection and use of the personal data.",
-            "D. Provide individuals with information explaining that their personal data will be used for marketing purposes." 
+            "D. Provide individuals with information explaining that their personal data will be used for marketing purposes."
         ],
         "answer": "D",
-        "rationale": "Individuals must be informed that their personal data will be used for marketing; listing the lawful basis is not required in the direct notice."        
+        "rationale": "Individuals must be informed that their personal data will be used for marketing; listing the lawful basis is not required in the direct notice."
     },
     {
-        "question": "4. Which of the following is NOT a required element of binding corporate rules (BCRs)?",
+        "question": "Which of the following is NOT a required element of binding corporate rules (BCRs)?",
         "options": [
             "A. A list of the specific categories of personal data processed under the BCR.",
             "B. A list of controllers and processors for data transfers not affected by the BCR.",
             "C. A list of the methods through which the BCRs are communicated to data subjects.",
-            "D. A list of the tasks of any person responsible for monitoring BCR compliance." 
+            "D. A list of the tasks of any person responsible for monitoring BCR compliance."
         ],
         "answer": "B",
-        "rationale": "Article 47 describes required elements for BCRs, which include details of transfers and monitoring tasks but not an exhaustive list of external controllers."        
+        "rationale": "Article 47 describes required elements for BCRs, which include details of transfers and monitoring tasks but not an exhaustive list of external controllers."
     },
     {
-        "question": "5. What is an important difference between the European Court of Human Rights and the Court of Justice of the European Union?",
+        "question": "What is an important difference between the European Court of Human Rights and the Court of Justice of the European Union?",
         "options": [
             "A. ECHR can rule on privacy issues, while the CJEU cannot.",
             "B. CJEU can compel national governments to implement EU law, while the ECHR cannot.",
             "C. CJEU hears appeals on human rights decisions, while the ECHR cannot.",
-            "D. ECHR can enforce human rights laws against governments, while the CJEU cannot." 
+            "D. ECHR can enforce human rights laws against governments, while the CJEU cannot."
         ],
         "answer": "B",
-        "rationale": "The CJEU ensures EU law is applied uniformly and can force governments to comply, whereas the ECHR oversees the European Convention on Human Rights."        
+        "rationale": "The CJEU ensures EU law is applied uniformly and can force governments to comply, whereas the ECHR oversees the European Convention on Human Rights."
     }
 ]
