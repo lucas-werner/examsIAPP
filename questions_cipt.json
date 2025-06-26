@@ -1,4 +1,4 @@
-[
+please put all these questions in a json file in a format like this: [
     {
         "question": "In the context of a large retailer implementing Privacy-by-Design principles, which strategy best ensures that customer data is protected throughout its life cycle?",
         "options": [
