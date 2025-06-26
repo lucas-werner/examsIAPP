@@ -1,6 +1,6 @@
-# AIGP Practice Quiz
+# Privacy Certifications Practice Quiz
 
-This repository contains a single-page web application that provides an interactive practice quiz for the IAPP AI Governance Professional (AIGP) certification exam. The quiz includes 100 multiple-choice questions with rationale and scoring similar to the official test.
+This repository contains a single-page web application that provides interactive practice quizzes for several IAPP certifications. The AIGP exam includes 100 questions, while the CIPP/E, CIPM, CIPP/A and CIPT samples contain smaller question sets for demonstration purposes.
 
 ## Opening the Quiz
 
@@ -14,4 +14,6 @@ At the halfway point, the quiz pauses and shows a review screen. Use the flag ic
 ## Prerequisites
 
 The HTML file references Tailwind CSS and Google Fonts via public CDNs and fetches `questions.json` for quiz data. Make sure your computer has internet access when you open `index.html` so these resources can be loaded.
+
+Progress and timer information are saved in your browser's local storage with an identifier for each exam type, so switching between simulators will not overwrite previous progress.
 

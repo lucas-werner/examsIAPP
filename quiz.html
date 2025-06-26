@@ -124,9 +124,14 @@
         let userSelections = [];
         let flaggedQuestions = [];
         let reviewShown = false;
+        let currentExam = 'aigp';
+
+        function storageKey(key) {
+            return `${currentExam}_${key}`;
+        }
         async function fetchQuizData() {
             const params = new URLSearchParams(window.location.search);
-            const exam = params.get('exam') || 'aigp';
+            currentExam = params.get('exam') || 'aigp';
             const files = {
                 'aigp': 'questions.json',
                 'cipp-e': 'questions_cippe.json',
@@ -134,7 +139,7 @@
                 'cipt': 'questions_cipt.json',
                 'cipp-a': 'questions_cippa.json'
             };
-            const file = files[exam] || 'questions.json';
+            const file = files[currentExam] || 'questions.json';
             const resp = await fetch(file);
             quizData = await resp.json();
             userSelections = new Array(quizData.length).fill(null);
@@ -174,19 +179,19 @@
         let remainingTime = 0;
 
         function saveQuizState() {
-            localStorage.setItem('userSelections', JSON.stringify(userSelections));
-            localStorage.setItem('currentQuestionIndex', currentQuestionIndex);
-            localStorage.setItem('timeRemaining', remainingTime);
-            localStorage.setItem('flaggedQuestions', JSON.stringify(flaggedQuestions));
-            localStorage.setItem('reviewShown', reviewShown ? '1' : '0');
+            localStorage.setItem(storageKey('userSelections'), JSON.stringify(userSelections));
+            localStorage.setItem(storageKey('currentQuestionIndex'), currentQuestionIndex);
+            localStorage.setItem(storageKey('timeRemaining'), remainingTime);
+            localStorage.setItem(storageKey('flaggedQuestions'), JSON.stringify(flaggedQuestions));
+            localStorage.setItem(storageKey('reviewShown'), reviewShown ? '1' : '0');
         }
 
         function clearSavedQuizState() {
-            localStorage.removeItem('userSelections');
-            localStorage.removeItem('currentQuestionIndex');
-            localStorage.removeItem('timeRemaining');
-            localStorage.removeItem('flaggedQuestions');
-            localStorage.removeItem('reviewShown');
+            localStorage.removeItem(storageKey('userSelections'));
+            localStorage.removeItem(storageKey('currentQuestionIndex'));
+            localStorage.removeItem(storageKey('timeRemaining'));
+            localStorage.removeItem(storageKey('flaggedQuestions'));
+            localStorage.removeItem(storageKey('reviewShown'));
         }
 
         function startTimer(durationInSeconds) {
@@ -202,7 +207,7 @@
                 timerEl.textContent =
                     `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 
-                localStorage.setItem('timeRemaining', remainingTime);
+                localStorage.setItem(storageKey('timeRemaining'), remainingTime);
 
                 if (--remainingTime < 0) {
                     clearInterval(timerInterval);
@@ -216,11 +221,11 @@
         }
         
         function startQuiz() {
-            const savedSelections = JSON.parse(localStorage.getItem('userSelections'));
-            const savedIndex = parseInt(localStorage.getItem('currentQuestionIndex'), 10);
-            const savedTime = parseInt(localStorage.getItem('timeRemaining'), 10);
-            const savedFlags = JSON.parse(localStorage.getItem('flaggedQuestions'));
-            reviewShown = localStorage.getItem('reviewShown') === '1';
+            const savedSelections = JSON.parse(localStorage.getItem(storageKey('userSelections')));
+            const savedIndex = parseInt(localStorage.getItem(storageKey('currentQuestionIndex')), 10);
+            const savedTime = parseInt(localStorage.getItem(storageKey('timeRemaining')), 10);
+            const savedFlags = JSON.parse(localStorage.getItem(storageKey('flaggedQuestions')));
+            reviewShown = localStorage.getItem(storageKey('reviewShown')) === '1';
 
             if (Array.isArray(savedSelections)) {
                 userSelections = savedSelections;
