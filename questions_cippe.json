@@ -1,57 +1,992 @@
 [
     {
-        "question": "How does the GDPR define \u2018processing\u2019?",
+        "question": "In the context of a large retailer implementing Privacy-by-Design principles, which of the following \n\nstrategies would best ensure that customer data is protected throughout its life cycle?",
         "options": [
-            "A. Any act involving the collecting and recording of personal data.",
-            "B. Any operation or set of operations performed on personal data or on sets of personal data.",
-            "C. Any use or disclosure of personal data compatible with the collection purpose.",
-            "D. Any operation or set of operations performed by automated means on personal data."
-        ],
-        "answer": "B",
-        "rationale": "Article 4(2) defines processing broadly as any operation performed on personal data, whether or not by automated means."
-    },
-    {
-        "question": "A breach of security leading to the accidental loss of personal data triggers notification obligations. How soon must a processor notify the controller according to Article 33(2) of the GDPR?",
-        "options": [
-            "A. Within 48 hours after the breach occurred.",
-            "B. Timing varies based on the data processing agreement.",
-            "C. Without undue delay after becoming aware of the breach.",
-            "D. Depending on the laws of the controller\u2019s country."
+            "A. Encrypting customer data when it is at rest.",
+            "B. Updating privacy policies and training staff on privacy practices regularly.",
+            "C. Embedding privacy controls into each stage of the data processing life cycle.",
+            "D. Providing access to customer data to the marketing department exclusively."
         ],
         "answer": "C",
-        "rationale": "Processors must notify the controller without undue delay once aware of a personal data breach."
+        "rationale": "Embedding privacy controls into each stage of the data processing life cycle from \n\ncollection to destruction ensures comprehensive protection of customer data, aligning with Privacy-by-Design \nprinciples. This reflects the principle of end-to-end security and full life cycle protection, which is a core aspect of \nPrivacy by Design.  \nBody of Knowledge Domain I, Competency B"
     },
     {
-        "question": "Under the GDPR, when using personal data for direct marketing, controllers must do which of the following?",
+        "question": "Jenny completed a purchase on a website and was presented with a pop-up box on the final page that read, \n\n“Thank you for your purchase! We will email you in the future about related product and services. Please \n\nselect an option below to opt-out.” The three buttons below the message read, “Do Not Opt-Out,” “Decline” \n\nand “Skip This Step.” Jenny selected the option to “Skip This Step,” believing it was the best choice to \n\ncontinue her browsing experience. This is an example of which of the following?",
         "options": [
-            "A. Provide individuals with the categories of any third parties who will rely on the consent.",
-            "B. Encrypt the personal data before using it for marketing.",
-            "C. Disclose to individuals the specific lawful basis for the collection and use of the personal data.",
-            "D. Provide individuals with information explaining that their personal data will be used for marketing purposes."
+            "A. Dark pattern.",
+            "B. Clickstream pattern.",
+            "C. Guided marketing model.",
+            "D. Ad choice design approach."
+        ],
+        "answer": "A",
+        "rationale": "Dark patterns are programming techniques which are intended to misguide or deceive \nwebsite users. This is the opposite of privacy patterns, which are programming techniques intended to maintain \nor enhance an individual’s privacy rights. In this example, the website designer used a dark pattern technique to \nheavily influence and trick Jenny to make a certain choice. A data controller needs to ensure that users can \nproperly inform themselves before making a choice. Otherwise, processing their information may be unlawful in \nsome jurisdictions because consent is invalid. Unfortunately, providing two inferior choices resulted in Jenny’s \nuninformed consent to receive targeted advertisements on the company’s website.  \nBody of Knowledge Domain III, Competency D"
+    },
+    {
+        "question": "A cloud service provider wants to advertise the benefits of its service by publishing information that shows \n\nhow its users have interacted with the platform. It plans to publish only aggregated data to not identify its \n\ncustomers. What would be a best practice before publishing its aggregated data?",
+        "options": [
+            "A. The company should review its legal basis for keeping the sales information and determine whether the customers have provided consent.",
+            "B. The company should maintain a log of its employees that accessed the database to ensure the underlying data has not been modified prior to aggregation.",
+            "C. The company should ensure its procedures for responding to information requests by customers allow it to correct any errors in the published data.",
+            "D. The company should evaluate whether publicly available or other sources of information are sufficient to reconstruct the aggregated database and identify individuals."
         ],
         "answer": "D",
-        "rationale": "Individuals must be informed that their personal data will be used for marketing; listing the lawful basis is not required in the direct notice."
+        "rationale": "Aggregating data can be a good way to protect information about individuals. However, \na variety of methods, such as statistical analysis or comparison to other databases, can permit the recreation of \nunderlying data and identify individuals.  \nBody of Knowledge Domain III, Competency D"
     },
     {
-        "question": "Which of the following is NOT a required element of binding corporate rules (BCRs)?",
+        "question": "A utility company discovers that it is missing first names for some of its customers. It purchases \n\nhouseholder data from a credit reference agency to obtain names and attempt to find a match in their \n\ncustomer database. The two companies will apply a logical rule that attributes the utility bills and assigns \n\nliability for such debts to the individual with the most active credit history at an address. What kind of \n\nprivacy threat is most likely to occur based on this scenario?",
         "options": [
-            "A. A list of the specific categories of personal data processed under the BCR.",
-            "B. A list of controllers and processors for data transfers not affected by the BCR.",
-            "C. A list of the methods through which the BCRs are communicated to data subjects.",
-            "D. A list of the tasks of any person responsible for monitoring BCR compliance."
+            "A. The data could become distorted.",
+            "B. An individual’s identity could be appropriated.",
+            "C. The data could be used to identify an individual.",
+            "D. An individual could be placed under illegal surveillance. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
         ],
-        "answer": "B",
-        "rationale": "Article 47 describes required elements for BCRs, which include details of transfers and monitoring tasks but not an exhaustive list of external controllers."
+        "answer": "A",
+        "rationale": "There are likely to be people with the same last name at an address and it is not always \n\nthe case that the main bill payer has the most active credit history. The application of this rule could lead to an \nindividual being falsely identified as the main utility account holder and cause a distortion of their credit score if \nthe debts are attributed to them. When combining data or linking data, the logical rules used to make matches \nmust be vigorously tested to prevent distortion of data sets and negative consequences for individuals.  \nBody of Knowledge Domain III, Competency D"
     },
     {
-        "question": "What is an important difference between the European Court of Human Rights and the Court of Justice of the European Union?",
+        "question": "An organization is using Scrum methodology to develop in-house solutions for customer support, which \n\ninvolves how personal data of its customers is processed. During each sprint, the team examines the \n\nimplications the changes have on customer privacy and ensures the process remains compliant with their \n\nprivacy program. When a change occurs in the system during development, there is a change management \n\nprocedure that triggers an evaluation of whether the engineering, design, implementation or testing \n\nrequirements needs to change within the development process. This example is a component of which of \n\nthe below?",
         "options": [
-            "A. ECHR can rule on privacy issues, while the CJEU cannot.",
-            "B. CJEU can compel national governments to implement EU law, while the ECHR cannot.",
-            "C. CJEU hears appeals on human rights decisions, while the ECHR cannot.",
-            "D. ECHR can enforce human rights laws against governments, while the CJEU cannot."
+            "A. Code audit process.",
+            "B. Code review process.",
+            "C. Software evolution process.",
+            "D. Runtime behavior monitoring."
+        ],
+        "answer": "C",
+        "rationale": "Organizations have huge investments in their software systems—they are critical \n\nbusiness assets. To maintain the value of these assets to the business, they must be changed and updated. \nMost of the software budget in large companies is devoted to changing and evolving existing software rather \nthan developing new software. A spiral model of development and evolution represents how a software system \nevolves through a sequence of multiple releases. The process of software evolution is driven by requests for \nchanges and includes change impact analysis, release planning and change implementation. However, the \nconcerns of the development team should extend beyond functionality to include the impact the changes have \non the personal data the company processes. Advances in technology used to process personal data and an \nincrease in privacy legislation have created a need for software to be more secure and privacy compliant.  \nBody of Knowledge Domain III, Competency F \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Beth’s client is keen on ensuring that her team considers privacy and data protection issues at every phase \n\nof each product’s life cycle. Which of the following enables the team to test various phases of the life cycle \n\nfor potential risks?",
+        "options": [
+            "A. Binding corporate rules (BCR).",
+            "B. Transfer impact assessment (TIA).",
+            "C. Record of processing activity (RoPA).",
+            "D. Data protection impact assessment (DPIA)."
+        ],
+        "answer": "D",
+        "rationale": "A data protection impact assessment (DPIA) is a privacy compliance tool introduced by \nthe GDPR that can test potential privacy and data protection issues at all phases of a product life cycle. The \nprocess of conducting a DPIA includes identifying risks and exploring ways to mitigate or manage those risks.  \nBody of Knowledge Domain II, Competency B"
+    },
+    {
+        "question": "Which of the following is a part of a privacy risk assessment?",
+        "options": [
+            "A. Privacy training and awareness.",
+            "B. Data inventory and data mapping.",
+            "C. Ongoing operations and maintenance.",
+            "D. Software development and unit testing."
         ],
         "answer": "B",
-        "rationale": "The CJEU ensures EU law is applied uniformly and can force governments to comply, whereas the ECHR oversees the European Convention on Human Rights."
+        "rationale": "To conduct a privacy risk assessment, an organization will need to know, among other \n\nthings, what data the company has collected and maintains in its systems before it can determine the privacy \nrisks around that data. For example, in addition to knowing what data the company has, it will also need to \nknow the purposes for which the data is being used.  \nBody of Knowledge Domain VI, Competency A"
+    },
+    {
+        "question": "Which of the following statements about aggregated data sets is TRUE?",
+        "options": [
+            "A. Combining multiple partial-identifiers can lead to individuals becoming identifiable.",
+            "B. Removing names from the data set will prevent the individual from becoming identified.",
+            "C. Generalizing the date of birth to age makes this data point unattributable to an individual.",
+            "D. Disclosing the data set with no outlier data points will ensure individuals cannot be identified. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "A",
+        "rationale": "Careful risk analysis must be done to ensure that data sets have been truly \n\nanonymized. Removal of direct identifiers is a suppression method that is effective but must be considered in \nconjunction with other techniques. Seemingly nonidentifiable attributes can be combined to identify an \nindividual even when the direct identifiers are removed. Generalization is another technique to improve the \nanonymity of data, but it also has limitations. Age can still be a uniquely identifiable attribute in the data set \ndepending on the context, e.g., the individual could still be the oldest or youngest individual in the data set and \nthus identifiable. Removing outliers in the data sets, either by generalization or noise addition, is a good \ntechnique but also is not effective in isolation because there may be another unique attribute.  \nBody of Knowledge Domain IV, Competency C"
+    },
+    {
+        "question": "For a large retailer, which of the following actions best demonstrates adherence to privacy principles during \n\nthe data retention phase of the data life cycle?",
+        "options": [
+            "A. Allowing customers to request deletion of their data at any time but keeping a copy exclusively for internal use.",
+            "B. Storing all customer data indefinitely to ensure it is always available for future analysis and potential future uses.",
+            "C. Backing up customer data to multiple secure locations regularly to prevent data loss and ensure future retrieval of data.",
+            "D. Implementing a strict data retention policy that automatically deletes customer data after a specified period unless retention is legally required. SCENARIO I Please use the following scenario to answer the next TWO questions. You work at a large multinational organization that operates a global online marketplace. The organization is headquartered in the U.S. but has operations in Ireland and Australia. Individuals in almost every country of the world can join the platform. Once a user is on the platform, they can sell items to other users around the world. The platform facilitates the sending of items, but individuals making purchases don’t know from which country their items will arrive. The platform allows individuals to post reviews about both the items they buy and the sellers of the goods. Individuals must register and create an account to sell items or make purchases. Traditionally, users have been able to mask certain elements of their identity to other users when they create an account. This includes selecting a nickname rather than using their real names, masking their locations, and hiding their contact details (phone numbers, email addresses, etc.). The real data is provided to your company but is masked to other users. At the time information was collected, users were assured that their personal details would not be shared with other users. In the past few days there has been a significant drop in users and revenues. A new competitor is luring away your company’s users – and getting a significant number of new users who have never used a platform like this one in the past. The head of product development thinks customers are leaving the platform and going to the competitor because the competitor does not permit users to be anonymous on the site. The head of product development has convinced the CEO that customers trust the competitor’s platform and products sold on the platform because they can see that the other customers are “real people” and know exactly who they are. You think that users are likely leaving the platform because your company suffered a massive data breach several months ago, and users have just received notices about the incident. Your CEO now wants to remove the ability for new users to mask their identities. The CEO also wants to unmask existing users’ identities. You have been working hard to explain to the CEO why this is not feasible, and given the current post-breach climate, not an advisable step. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "D",
+        "rationale": "Implementing a strict data retention policy that automatically deletes customer data \n\nafter a specified period unless retention is legally required ensures that data is not kept longer than necessary, \naligning with privacy principles. This reflects the principle of data minimization and proper data retention \nmanagement, which are crucial for demonstrating compliance with privacy principles during the data life cycle. \nBody of Knowledge Domain I, Competency D"
+    },
+    {
+        "question": "Which of the following statements is NOT correct with respect to the unmasking of user identities?",
+        "options": [
+            "A. Unmasking existing users’ identities could violate the GDPR and other laws and regulations regarding notice.",
+            "B. Unmasking existing users’ identities could invite potential class action claims and affect your company’s reputation.",
+            "C. Unmasking existing users’ identities would constitute an unfair and deceptive trade practice under the FTC Act, Section 5.",
+            "D. Unmasking existing users’ identities would cause your company to gain customers and be better able to compete with competitors."
+        ],
+        "answer": "D",
+        "rationale": "The company has made representations to existing users that their information would \nremain private. To now reveal that information would be a material change from the original representations \nmade to users, and moving forward would be viewed as violating privacy laws around the globe. \nBody of Knowledge Domain III, Competency B"
+    },
+    {
+        "question": "Allowing users the ability to mask their identities on the platform aligns with which of the FTC’s Five Fair \n\nInformation Practice Principles?",
+        "options": [
+            "A. Notice principle.",
+            "B. Choice principle.",
+            "C. Security principle.",
+            "D. Transparency principle. END OF SCENARIO I QUESTIONS"
+        ],
+        "answer": "B",
+        "rationale": "By giving individuals the ability to mask their identities, the company provides people \n\nwith choice about what information is publicly available on the website when they post a review. \nBody of Knowledge Domain I, Competency A \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "A vulnerability in the customer relationship management (CRM) software is being exploited by malicious \n\nhackers. The CRM vendor indicated that a quick-fix to the software will not be available for a week. The \n\npatch management process will take another 3 days to complete after receiving the quick-fix. What \n\ncompensating control should be put in place to protect the CRM system and customers’ personal data in \n\nthe meantime? \n\nInform customers about the situation and the potential risk to their personal data.",
+        "options": [
+            "A. ",
+            "B. Monitor the CRM system and review the system logs for anomalies on a daily basis.",
+            "C. Shut down the CRM system until the patch is installed and email customers about delays.",
+            "D. Shorten the testing period for the patch management process to release the patch sooner."
+        ],
+        "answer": "B",
+        "rationale": "A compensating control is a short-term control that reduces the risk of personal data \nexposure when the technical or organization measure is unavailable, which in this case, is a delay in the \ninstallation of the quick-fix to the vulnerable CRM system. The compensating control must also not impact the \nbusiness and at the same time, provide assurance that risk is managed.  \nBody of Knowledge Domain V, Competency D"
+    },
+    {
+        "question": "A company is developing a web-based chatbot that will ask customers to input information about \n\npreferences and hobbies to direct them to relevant products and services. Which of the following is the first \n\nstep software developers should take to ensure only the data needed is collected?",
+        "options": [
+            "A. Work with stakeholders to clearly define the project’s goals and identify which data components are necessary for success.",
+            "B. Create logs for interactions with the chatbot to confirm customers understand and appropriately respond to the chatbot’s questions.",
+            "C. Develop processes to transform collected data so that developers cannot see customer’s personal data unless necessary to perform their jobs.",
+            "D. Leverage Open Web Application Security Project (OWASP) resources to avoid common vulnerabilities and protect confidentiality of collected information. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "A",
+        "rationale": "Many data-driven organizations collect data first and find uses for it afterward. \n\nImplementing privacy by design through minimization requires understanding what information is required to \naccomplish a goal and limiting the collection to only that.  \nBody of Knowledge Domain V, Competency A"
+    },
+    {
+        "question": "Jack is a privacy engineer working in a bank. DevOps is enhancing the user interface of the bank’s mobile \n\napplication and contemplating the use of an open-source library module for facial recognition. DevOps \n\napproached Jack for his guidance. What is the first step that Jack must take?",
+        "options": [
+            "A. Conduct a risk/benefits analysis of the open-source software.",
+            "B. Test the open-source software in the bank sandbox environment.",
+            "C. Review and interpret the bank’s policy on the use of open-source software.",
+            "D. Contact the developer about the level of support for the open-source software."
+        ],
+        "answer": "C",
+        "rationale": "The bank’s policies are driven by critical regulatory requirements and will determine the \nsafe and acceptable use (or not) of open-source software. The policy may dictate what sources and license type \nare acceptable for use as guidance for the DevOps team before other downstream activities such as \nrisk/benefits analysis should take place.  \nBody of Knowledge Domain III, Competency E"
+    },
+    {
+        "question": "When implementing privacy by design, the processing and use of personal data should not be obscured or \n\nobfuscated. Notice and disclosure regarding the use or personal data should consider the needs of the \n\naudience. Which of the following is a foundational privacy principle that best reflects this statement?",
+        "options": [
+            "A. Transparency.",
+            "B. Accountability.",
+            "C. Privacy by default.",
+            "D. Privacy engineering."
+        ],
+        "answer": "A",
+        "rationale": "The concept of “visibility and transparency” is one of Dr. Ann Cavoukian’s seven \n\nfoundational privacy principles of Privacy by Design. This principle focuses on being open about the use of \npersonal data and ensuring that the disclosure about the use makes sense to the data subjects and other \nrelevant stakeholders.  \nBody of Knowledge Domain I, Competency B"
+    },
+    {
+        "question": "A multinational entity needs to analyze sensitive employee data across its global offices without exposing \n\nindividual information to any unauthorized users. Which privacy-enhancing technology would best allow for \n\nsecure computation on this data while maintaining privacy across international communications?",
+        "options": [
+            "A. Tokenization.",
+            "B. Differential privacy.",
+            "C. Zero-knowledge proofs.",
+            "D. Homomorphic encryption."
+        ],
+        "answer": "D",
+        "rationale": "Homomorphic Encryption allows computations to be performed on encrypted data \nwithout decrypting it. This technology enables the corporation to analyze aggregated employee data across \noffices while maintaining individual privacy. It's particularly suited for scenarios involving sensitive data \ntransmission and processing across international boundaries, addressing both privacy and compliance concerns \nin global communications. \nBody of Knowledge Domain VII, Competency E"
+    },
+    {
+        "question": "Tom joined a new social media platform to grow his food catering business. To complete the registration \n\nprocess, he was required to grant the platform permission to access his contact list. Shortly after, his \n\nbusiness contacts informed him that they received spam messages from him on loans and insurance \n\nproducts. This is an example of which dark pattern?",
+        "options": [
+            "A. Spamming.",
+            "B. Hidden stipulations.",
+            "C. Information milking.",
+            "D. Address book leeching."
+        ],
+        "answer": "D",
+        "rationale": "Leeching is a social media process wherein information is gathered for one purpose \n\nand then used for another. The social media company urged Tom to share his contacts to access a site function. \nThe information was then used for unauthorized purposes such as spamming his contacts with information in \nTom’s name.  \nBody of Knowledge Domain VI, Competency C \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Which activity will most help a controller ensure the operations of a processor are within the scope of the \n\npersonal data processing agreement?",
+        "options": [
+            "A. Privacy audit.",
+            "B. Video surveillance.",
+            "C. Runtime behavior monitoring.",
+            "D. Privacy risk assessment and analysis. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "A",
+        "rationale": "Auditing provides visibility into processes and recognizes the gap between what one \nshould do to protect privacy and the actual practices. To maintain accountability, the data controller must \nprovide regular vendor audits to detect if there is any violation of the data processing agreement or the \ntechnical and organization measures agreed upon.  \nBody of Knowledge Domain V, Competency C"
+    },
+    {
+        "question": "Which of the following are required to implement effective privacy engineering?",
+        "options": [
+            "A. Data governance, technological controls, engineering life cycle.",
+            "B. Technological controls, entity level controls, business process controls.",
+            "C. Building scalable solutions, enforcement of privacy safeguards, systems design.",
+            "D. Minimization of data, data protection impact assessments, purpose use limitation."
+        ],
+        "answer": "A",
+        "rationale": "Privacy engineering requires the incorporation of effective data governance, as well as \ntechnical controls, and embedding of privacy consideration within the engineering life cycle to be holistically \neffective.  \nBody of Knowledge Domain VI, Competency B"
+    },
+    {
+        "question": "Value-sensitive design is an iterative process that involves many types of investigations. Which investigation \n\ntype focuses on how stakeholders configure, use or are otherwise affected by the technology involved?",
+        "options": [
+            "A. Empirical.",
+            "B. Technical.",
+            "C. Conceptual.",
+            "D. Comparative."
+        ],
+        "answer": "A",
+        "rationale": "Empirical investigations are qualitative or quantitative investigations that attempt to \n\nunderstand the various stakeholders and their values, as well as any value conflicts that may arise. Conceptual \ninvestigations identify direct and indirect stakeholders, attempts to establish whatever stakeholders may value \nand determines how stakeholders are impacted by design. Technology investigations examine how existing \ntechnologies support or hinder human values and how the technology might be designed to support the values \nidentified during the conceptual investigation. Comparative investigations are not a type of value-sensitive \ndesign investigations.  \nBody of Knowledge Domain V, Competency C"
+    },
+    {
+        "question": "A company provides training to its employees about customer privacy rights and company privacy policies. \n\nThe company wants to assess the impact of its training as well as find areas for improvement. Which is the \n\nbest way to evaluate the effectiveness of training in achieving the company’s privacy objectives?",
+        "options": [
+            "A. Submit questionnaires to training participants after each training, requesting feedback on how the trainings can be made more engaging.",
+            "B. Require team leaders who develop and deliver trainings and refresher courses report to management on which methods are most effective.",
+            "C. Collect information about employees’ interactions with customer databases and email correspondences to be reviewed after a complaint has been filed.",
+            "D. Define goals or key performance indicators (KPIs) for the training program and create an audit process for logging and regularly reviewing these KPIs and goals."
+        ],
+        "answer": "D",
+        "rationale": "A good logging and audit process allows organizations to demonstrate compliance with \n\nprivacy obligations and identify and respond to deviations. However, merely logging information is not \nsufficient; an organization must at least periodically review logs. Logging can collect information about both \ntechnical (e.g., logins, account changes) and non-technical (e.g., customer complaints, number of phone calls) \nevents. Auditing this information provides visibility into the company’s risks and the effectiveness of risk \nmanagement.  \nBody of Knowledge Domain I, Competency C"
+    },
+    {
+        "question": "Identify which of the following is a commonly used threat modelling framework for identifying and \n\nevaluating privacy threats in the system development life cycle:",
+        "options": [
+            "A. AGILE.",
+            "B. DREA",
+            "C. STRIDE.",
+            "D. LINDDUN."
+        ],
+        "answer": "D",
+        "rationale": "LINDDUN is a recognized privacy threat modeling framework, developed by privacy \n\nexperts at KU Leuven. It offers support to identify and mitigate privacy threats early in the development life \ncycle.  It helps you identify potential privacy threats based on the 7 key LINDDUN threat types: Linking, \nIdentifying, Non-repudiation, Detecting, Data Disclosure, Unawareness, Non-compliance.  STRIDE and DREAD \nare both security threat models so are often used in tandem with LINDDUN.  AGILE is a project management \nmethodology used by many software developers to be able to manage projects quickly.   \nBody of Knowledge Domain VI, Competency A \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Which of the following is a main goal of using the Factor Analysis of Information Risk (FAIR) methodology?",
+        "options": [
+            "A. Build an estimate of overall threat.",
+            "B. Create a policy on privacy controls.",
+            "C. Focus on organizational costs and fines.",
+            "D. Develop a strategy for qualitative analysis ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "A",
+        "rationale": "Factor Analysis of Information Risk (FAIR) is a quantitative risk methodology for \ninformation security risk. The purpose of FAIR is to identify factors that can be calculated or reasonably \nestimated, thereby building an estimate of overall threat or risk. It is not the goal of FAIR to have precision or \ncertainty, but rather a logical and defensible range related to risk.  \nBody of Knowledge Domain I, Competency A"
+    },
+    {
+        "question": "A tech company’s back-office team in India wants to establish a recognition program that rewards \n\n“Applause” points as a token of gratitude for the efforts, hard work and dedication that its employees have \n\nshown throughout the year. The “Applause” points will be automatically credited to the employee’s digital \n\nwallet on the employee’s birthday. The vendor has asked for employees’ names, month and day of birth, \n\nwork email address, start date, and a profile image, which does not have to be a picture of the employee. \n\nAn initial file from the HR records has been established to test the setup with the vendor. The test file \n\nincludes employee name, work email address, work phone number, start date, date of birth, home mailing \n\naddress, emergency contact name and phone number, and a profile image, all of which the vendor stated \n\nwere necessary. The privacy team assessing this new process is questioning the data shared for the test. \n\nWhich of the following is true about the appropriate steps of data minimization when sharing information \n\nwith the vendor?",
+        "options": [
+            "A. Only the requested personal information from the HR system has been shared with the vendor.",
+            "B. The program is in the testing stage, so it is acceptable to include more information than requested.",
+            "C. Excluding, selecting and stripping of personal information from the HR system has not been considered.",
+            "D. The information shared is commonly requested by other vendors, so HR can share it with this new vendor. SCENARIO II Please use the following scenario to answer the next TWO questions. A U.S.-based national retail store chain is looking to expand its business and has recently hired its first chief privacy officer (CPO) and a new chief marketing officer (CMO) to help it drive greater marketing efforts in a way that protects privacy. The company already operates in several states but currently does not operate in other countries. In addition to its brick-and-mortar retail locations, the company has a website where people are able to order items for home delivery. The CPO has been asked to review the company’s existing practices related to personal data and to remediate any significant issues they identify. One of the first areas that the CPO reviewed was practices related to marketing to existing and potential customers. The organization used to rely on non-personalized marketing techniques, such as TV and radio advertising and physical billboards, as well as personalized marketing to individuals who have joined their loyalty program. The new CMO is looking to develop and deliver more personalized marketing experiences using personal data to target specific groups and individuals, with the goals of increasing both the customer base and increasing the total amount that existing customers spend per year. The CMO meets with the CPO and relays that the marketing team has several analyses they would like to run to assist with the marketing efforts: First, they would like to identify potential new store locations to meet the needs of online customers who might prefer to shop in-person. The sites must meet the following criteria: (a) they do not have an existing store within 20 miles, and (b) there are a minimum number of people with similar demographics to their existing customers. Before they commence this analysis, they would like to gain a baseline understanding of where their current online customers live. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0 Second, the CMO would like to run a joint marketing campaign with another company. To do this, they would like to identify customers the two companies have in common so they can target them for this campaign. After the meeting, the CMO emails the CPO and tells them that as part of their analysis, the marketing team has identified an old customer dataset which has not been updated for several years and does not appear to be in use."
+        ],
+        "answer": "C",
+        "rationale": "Excluding, selecting and stripping of personal information from the HR system has not \nbeen considered.  The goal is to share the least amount of personal information required to perform the \nprocess.  Date of birth includes the year, which was deemed not necessary by the vendor.  Additionally, \nemergency contact, emergency contact’s phone number and profile image are not required for the vendor to \ndeposit ‘Applause’ points into the employees’ digital wallets. \nBody of Knowledge Domain IV, Competency A"
+    },
+    {
+        "question": "Which technique would allow the identification of regular customers to be performed in a way that does \n\nnot require either company to directly share customers’ personal data with the other?",
+        "options": [
+            "A. Both companies encrypt their customer lists using asymmetric encryption prior to sharing.",
+            "B. Both companies run each of their customers email addresses through the same hash algorithm and compare the results.",
+            "C. Both companies load the datasets into a single database and only access it through private information retrieval techniques.",
+            "D. The companies set up secure multiparty computation so that neither of them can perform the analysis without the other companies’ knowledge."
+        ],
+        "answer": "B",
+        "rationale": "By first hashing all the email addresses and then comparing the results, each \n\norganization could understand the overlap in the datasets that represented common customers without \nsharing any of the other customer information.  \nBody of Knowledge Domain IV, Competency C"
+    },
+    {
+        "question": "Which of the following actions could the company take with respect to the old customer data set identified \n\nby the CMO that will provide the most privacy protection?",
+        "options": [
+            "A. Delete the dataset after confirming that there is no legal or business reason to retain it.",
+            "B. Email every customer in the dataset to ask whether they would like their data to be deleted.",
+            "C. Strip out any directly identifiable information and then make it available to the analytics team.",
+            "D. Apply access controls to restrict access to just the CMO in the event that a use case is identified. END OF SCENARIO II QUESTIONS"
+        ],
+        "answer": "A",
+        "rationale": "The most privacy protective measure is to delete the dataset. Data minimization \n\nincludes deleting or destroying data that is no longer in use, which reduces the risk of harm to consumers and \nthe risk to the organization in the event of a breach or incident.  \nBody of Knowledge Domain IV, Competency C"
+    },
+    {
+        "question": "Which of the following is an example of privacy engineering that is focused most specifically on security \n\ncontrols?",
+        "options": [
+            "A. Access controls.",
+            "B. Data anonymization.",
+            "C. Data pseudonymization.",
+            "D. Automated data disposal."
+        ],
+        "answer": "A",
+        "rationale": "Security measures such as encryption, access controls, and regular audits help bolter \nprivacy engineering efforts.  Data anonymization, data pseudonymization, and automated data disposal are \nprivacy engineering controls, but not specifically security controls. \nBody of Knowledge Domain VI, Competency A"
+    },
+    {
+        "question": "Which of the following is an example of the predictability objective in privacy engineering?",
+        "options": [
+            "A. Enabling users to view their privacy preferences when accessing a website.",
+            "B. Allowing users to make corrections or updates to inaccurate personal data.",
+            "C. Requiring users to check a box stating they have read and agreed to the privacy notice.",
+            "D. Providing users with a contact individual to administer changes to their personal data. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "C",
+        "rationale": "Predictability characterizes reliable assumptions about a system, particularly its data \n\nand the processing of that data by all stakeholders. Measurable events such as user participation in \nacknowledging and agreeing to the privacy notice, will eliminate surprises during later phases of the system use \nprovided the privacy notice is correct, enabling the predictability objective to be met.  \nBody of Knowledge Domain VI, Competency B \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Which of the following privacy technologists’ activities is recognized as part of the software evolution \n\nprocess?",
+        "options": [
+            "A. Analyzing technical log performance data on a regular basis.",
+            "B. Participating in developers’ team meetings to discuss new projects.",
+            "C. Assessing the existing privacy controls in the technological ecosystem.",
+            "D. Running a privacy impact assessment when software is being updated."
+        ],
+        "answer": "D",
+        "rationale": "When software that processes or contains personal data is being updated or changed, \nit is critical that a privacy impact assessment is performed on the proposed changes or updates. Changes to \nhow a software operates could significantly change the collection of, access to, or other processing of personal \ndata. Ensuring the software changes do not negatively impact personal data is a key function of the privacy \ntechnologist and to the software evolution process.  \nBody of Knowledge Domain I, Competency C"
+    },
+    {
+        "question": "Artificial intelligence can potentially introduce privacy harms to individuals in which of the following ways?",
+        "options": [
+            "A. Excluding personal data from collection.",
+            "B. Using personal data in unintended ways.",
+            "C. Hashing data from one set to another set.",
+            "D. Mixing data types to hide relationships among data."
+        ],
+        "answer": "B",
+        "rationale": "Privacy harms can be introduced when data is processed in unintended ways. Artificial \nintelligence could potentially introduce tasks or processes that manipulate data to influence people’s buying \nchoices.  \nBody of Knowledge Domain VII, Competency D"
+    },
+    {
+        "question": "To sign up for a retailer’s loyalty program, Peter must complete a form asking for his name, contact \n\ninformation, income and other demographic information. Peter completing and submitting the form to the \n\nretailer is an example of what type of data collection?",
+        "options": [
+            "A. Passive collection.",
+            "B. First-party collection.",
+            "C. Qualitative collection.",
+            "D. Third-party collection."
+        ],
+        "answer": "B",
+        "rationale": "First-party collection happens when the data subject provides information about \n\nthemself directly to the collector and is generally the most accurate of collection methods. As with any personal \ndata, however, it is critical that those collecting the data only collect what is necessary for the purpose and \ndelete the data once it is no longer needed.  \nBody of Knowledge Domain I, Competency D"
+    },
+    {
+        "question": "On an annual basis, the tech team performs assessments to evaluate its applications, infrastructure, \n\nassociated processes and services to ensure regulatory and policy compliance. One of the information \n\nprotection controls that the team will concentrate on is the application’s use of “highly confidential” \n\ninformation in the non-production environments. Application YYZ is in scope for this year’s assessment, as \n\na significant amount of confidential personal information (name, home address, date of birth and financial \n\naccount numbers) is held in the non-production environment. The assessor believes that this presents a \n\nrisk to the organization, as the controls in the lower environment do not match that of the production \n\nenvironment and, therefore, the personal information is not properly protected. What should the assessor \n\nrecommend in the report?",
+        "options": [
+            "A. The assessor should document this control as compliant, given it is not a deviation of policy.",
+            "B. The assessor should document this control as non-compliant and advise that the policy needs to be updated to include how personal information should be managed in the non-production environments.",
+            "C. The assessor should document this control as non-compliant because the personal information in the non-production environment is classified as “highly confidential.”",
+            "D. The assessor should document this control as compliant but advise that the policy needs to be revised to address how personal information should be managed in the non-production environments. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "D",
+        "rationale": "Personal information in the lower environment should be protected using the same \n\ncontrols as in the production environment, or to the industry standard, but neither are in place.  The \ninformation protection policy needs to be revisited to assure that personal information is contemplated. \nBody of Knowledge Domain V, Competency D"
+    },
+    {
+        "question": "A company has hired a marketing company to identify past website visitors who revisit its site for future \n\nmarketing. This is an example of what type of activity?",
+        "options": [
+            "A. A digital distraction.",
+            "B. A retargeting campaign.",
+            "C. A keyword ad campaign.",
+            "D. A website personalization."
+        ],
+        "answer": "B",
+        "rationale": "The term “retargeting” refers to online advertising campaigns where the advertiser \nattempts to get website visitors to come back to the company’s website. The campaign works by dropping a \ncookie on the user’s computer. When the user leaves the site, the cookie identifies that user and allows them to \nbe served with ads encouraging their return to the website. \nBody of Knowledge Domain VII, Competency B"
+    },
+    {
+        "question": "Cody is a software developer who is working on creating a retail website for a company. The company is \n\nvery dependent on getting as many consumers as possible to sign up to receive marketing. His design team \n\nhas brought him four different layouts and ideas for a pop-up banner encouraging consumers to sign up \n\nfor a marketing list. Which of the following design choices would be considered appropriate from a privacy \n\nengineering perspective?",
+        "options": [
+            "A. The pop-up banner offers a discount code for 15 percent off the first purchase if the user provides their email address, but the pop-up banner disappears when the user closes the pop-up using the X.",
+            "B. The pop-up banner is central to the screen, even if the user scrolls, and it has no X button to close it. It only disappears if the user interacts with the pop-up by entering their email address.",
+            "C. The pop-up banner appears when the user interacts with any other button on the webpage and has two options for the user: The button saying CLOSE is in a blue box and on the left-hand side, and the button saying SIGN UP is in a red box and on the right-hand side.",
+            "D. The pop-up banner disappears if the user clicks anywhere outside of the pop-up box or scrolls the page, and it has a clear factual message telling the user that when they sign up, the company will share new deals and promotions with them."
+        ],
+        "answer": "D",
+        "rationale": "Options A-C are examples of dark patterns that manipulate or force the user to \n\nprovide their personal data to use the service or purchase the goods provided by the website.    Privacy \nengineers must resist any attempts to insert deceptive design into websites, such as reversal of color and \nposition of buttons (in the west most people associate green with good, red with bad, or grey with close and \nmost people expect Yes and No in that order left to right on the page).  Offering discounts is also considered a \ndark pattern since it is asking the user to give up their privacy rights in return for a reward.  Websites that \ndeliberately try to generate user frustration by not allowing them to see past the pop-up banner are also using \ndark patterns to annoy the consumer into consenting to data collection. \nBody of Knowledge Domain VI, Competency C \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "A game app available on a popular app store wants to add a requirement for players to include their social \n\nmedia accounts upon signing up. The game app will receive marketing leads from this functionality, and \n\nplayers will get to display their scores and interact with other players. Which of the following would cause a \n\nprivacy concern?",
+        "options": [
+            "A. A setting that requires players access the app through the social media account sign-in buttons before playing.",
+            "B. A setting that requires users to provide their payment details in the app store if they want to receive daily rewards.",
+            "C. A setting that allows signed in players to form and join teams with other signed in players in their area and demographic.",
+            "D. A setting that asks players whether the app can use their location services to display their country in the player’s profile."
+        ],
+        "answer": "A",
+        "rationale": "A sign-up screen that does not permit you to enter the game without providing \n\nadditional personal data, such as your social media information which typically includes personal details, is likely \nto violate the principle of data minimization and could infringe upon consent. The game app should work \nwithout requiring individuals to provide unnecessary personal data and allow an option to do so at the user’s \nchoice.  \nBody of Knowledge Domain I, Competency D"
+    },
+    {
+        "question": "Julia decided to reformat her company’s website privacy notice. She brought critical elements to the \n\nforeground and supplemented those elements with additional related detail to make the privacy notice \n\neasier for users to navigate and comprehend. This is an example of utilizing which of the following?",
+        "options": [
+            "A. Privacy pattern.",
+            "B. Clickstream pattern.",
+            "C. Data pattern theory.",
+            "D. Website design model. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "A",
+        "rationale": "Privacy laws and principles can be complex and full of legal terminology unfamiliar to \nindividuals who do not work in privacy. A data controller needs to balance complexity and comprehensiveness \nin their privacy notice to ensure that users can properly inform themselves. Otherwise, processing their \ninformation is unlawful because consent is invalid. Privacy patterns are real-world, practical design solutions \nwhich can be used in in any stage of the development process. Julia is implementing a layered design policy \nprivacy pattern to ensure the user (data subject) is properly informed about her company’s privacy practices.  \nBody of Knowledge Domain V, Competency B"
+    },
+    {
+        "question": "An organization is looking to outsource part of its business operations to a third party. As part of the \n\noutsourcing, some employees from the third party will require access to the organization’s physical \n\nlocations and some IT systems that contain personal data. Which of the following should an organization do \n\nfirst to provide the highest level of security and work to ensure the outsourcing company is granted only \n\nappropriate access to personal data?",
+        "options": [
+            "A. Configure the system’s role-based access controls (RBAC).",
+            "B. Determine which employees will need access to specific data.",
+            "C. Have each individual sign a non-disclosure agreement (NDA).",
+            "D. Perform a background check on each employee of the third-party company."
+        ],
+        "answer": "B",
+        "rationale": "The organization would need to apply the least privileged access principle prior to \n\nimplementing RBAC. This means determining who will need access and which data they need access to. In this \nway, the company can then appropriately limit access without restricting the employees’ ability to do their jobs.  \nBody of Knowledge Domain IV, Competency C"
+    },
+    {
+        "question": "Some U.S. states (Illinois, for example) require getting a user’s affirmative consent before collecting and \n\nusing biometric identifiers. Other jurisdictions do not impose this obligation. Developing a national — or \n\nglobal — approach to collection and use of biometrics can be challenging in the face of different legal \n\nrequirements. The Fair Information Practices (FIPs) can help companies develop their approach. Under \n\nwhich FIP might it be appropriate to obtain consent for collection and use of biometric identifiers?",
+        "options": [
+            "A. Security.",
+            "B. Use limitation.",
+            "C. Data minimization.",
+            "D. Individual participation."
+        ],
+        "answer": "D",
+        "rationale": "Under the concept of “individual participation,” a person should be asked to consent to \nhow their information is being used. Here, where the law is silent (i.e., jurisdictions that do not specifically \nrequire consent for collecting and using biometric identifiers), companies can turn to the “individual \nparticipation” FIP.  \nBody of Knowledge Domain III, Competency A"
+    },
+    {
+        "question": "Peart Industries engaged Cheta Security Inc. to perform information security monitoring processes. Cheta \n\nSecurity asked for email addresses of all Peart employees, proposing that if any email activity triggers the \n\nsecurity rules, Cheta could share the offending accounts with Peart for investigation. Peart’s infosec team \n\noffered an alternative solution: each employee could be given a randomly generated user ID when they first \n\nreceive access to the network. In the event an investigation is triggered, however, the email address would \n\nstill be recognizable in the company’s environment. What data-oriented strategy has been used here to \n\nprotect the employee’s identity?",
+        "options": [
+            "A. Hiding.",
+            "B. Isolation.",
+            "C. Obfuscation.",
+            "D. Disassociation. SCENARIO III Please use the following scenario to answer the next TWO questions. HomeConnect has made quite a name for themselves in developing a range of smart solution “Internet of Things” technologies which range from remotely controlled security systems to thermostats that can be adjusted from our mobile devices, voice-activated peripherals that allow those less capable of living independently, and other cutting-edge innovations. They have a very efficient order processing system. Smart devices are configured with default settings and shipped to customers within 24 hours of placing the order. The product box also includes a quick setup guide ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0 to save time for the customer. It is not a detailed setup guide, and certain steps, such as changing the password, are assumed to be common knowledge. It is well known that every instance of the Internet of Things (IoT) in the consumer context will likely become a target to hackers. Compromised IoT devices could expose a vast amount of personal data about an individual’s home, work, and health. HomeConnect’s cyber-engineering team, in an effort to stay ahead of hackers, often runs real-time updates and patches on endpoints to increase the protection. Whenever a major product release is planned, the team invites interested customers to participate in beta testing to catch failures and usability issues before the final launch. As part of their overall compliance and risk assessment, HomeConnect ensures that they maintain transparency with individuals about their processing activities to obtain any necessary consent. Despite the security steps taken, a group of hackers were able to access live feeds from the cameras around customers’ homes by using a variety of weak, recycled and default credentials. They were even able to communicate using integrated devices. More than thirty families reported that hackers verbally harassed them."
+        ],
+        "answer": "C",
+        "rationale": "Obfuscation prevents ability to read or understand the personal information as \n\npresented, but in this case the ‘key’ or interpretation of the user IDs was not shared with the vendor in order to \nprotect the employees. \nBody of Knowledge Domain IV, Competency A"
+    },
+    {
+        "question": "What can HomeConnect do to reduce a customer’s exposure to threats?",
+        "options": [
+            "A. Block the implementation of additional layers of security by the customer.",
+            "B. Require users to change their passwords as part of the initial configuration.",
+            "C. Set up systems to bypass authentication when a customer’s home network is not secure.",
+            "D. Advise customers to add household members to their accounts by sharing login credentials."
+        ],
+        "answer": "B",
+        "rationale": "People use the same username and password for multiple accounts and subscriptions, \nmaking it easier for criminals to use stolen or leaked credentials from one service to access another. Installation \nand maintenance of IoT devices should employ minimal steps and follow security best practices on usability. \nUsers should also be guided on how to set up their devices securely. \nBody of Knowledge Domain VII, Competency A \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "What best practice can the HomeConnect cyber-engineering team adopt for running software updates and \n\npatches?",
+        "options": [
+            "A. Ensure security patches are delivered over multiple channels.",
+            "B. Inform customers when an update is not ready for implementation.",
+            "C. Notify users when they access the device if there is a software update.",
+            "D. Conduct device vulnerability assessments only after an incident occurs. END OF SCENARIO III QUESTIONS"
+        ],
+        "answer": "C",
+        "rationale": "The need for each software update should be clear to users, and an update should be \neasy to implement. Software updates for IoT devices should be verified before rolling out and an individual \nshould have the option to update or not. If an unauthorized change is detected, the device should alert the \nadministrator of an issue and should not connect to wider networks than those necessary to perform the \nalerting function. Network segmentation can be applied either as physical or logical segmentation as it helps to \ncontain the spread. There are also some situations where devices cannot be patched. Some ultra-constrained \ndevices will fit in this category. For these devices, a replacement plan needs to be in place and should be clearly \ncommunicated to the consumer.  \nBody of Knowledge Domain V, Competency B"
+    },
+    {
+        "question": "Information technology has great value across all facets of an organization. Which of the following is a \n\nstrong business case for holistic data protection, inclusive of privacy, protection and security?",
+        "options": [
+            "A. Data protection responsibility should remain with the information technology and information security",
+            "B. teams. Information technology is fundamental to the data life cycle for managing engagement with suppliers and customers.",
+            "C. Collaborative efforts between information technology and other areas of an organization are not a regulatory requirement.",
+            "D. The relationship between information technology and other departments has no true correlation to operational efficiency. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "B",
+        "rationale": "Information technology creates or applies solutions for every area of an organization, \n\nso adopting a holistic view to the protection and safeguarding of data at all levels of processing will best support \na risk management approach to data protection compliance.  \nBody of Knowledge Domain I, Competency C"
+    },
+    {
+        "question": "Which statement below is FALSE with respect to the beta testing of a product?",
+        "options": [
+            "A. Performed on feature-complete systems.",
+            "B. Privacy risks are minimal or non-existent.",
+            "C. Open to the broader public but may be capped.",
+            "D. Users populate their profiles with personal data."
+        ],
+        "answer": "B",
+        "rationale": "Beta testing can provide extremely valuable insights – real scenarios of interactions \n\nwith a product. Privacy concerns during beta testing primarily relate to the scale and openness with which the \ntest is conducted. Unlike alpha testing, user accounts and associated personal data created in beta testing may \nbe retained for the live version of the system. Therefore, changes in privacy policies or other privacy \nmechanisms for the live system should be introduced to beta users to transition these users to the live system. \nBody of Knowledge Domain V, Competency B"
+    },
+    {
+        "question": "Value-source analysis involves which of the following?",
+        "options": [
+            "A. Using visual aides to influence and elicit values from stakeholders that will better align with a requisite response.",
+            "B. Leveraging narratives or scenarios to identify, communicate, or illustrate the impact of design choices on stakeholder values.",
+            "C. Assessing project, designer and stakeholder values and considering the ways in which each group’s values may be in conflict.",
+            "D. Striving to balance technology and social structure in the design space with a goal of identifying new solutions that might not be readily apparent."
+        ],
+        "answer": "C",
+        "rationale": "Considering each group’s values and how they may conflict allows for clearer \n\nconsideration in developing a project and aides in determining an appropriate path forward.   \nBody of Knowledge Domain II, Competency A"
+    },
+    {
+        "question": "Which of the following would be considered part of software vulnerability management?",
+        "options": [
+            "A. Software testing regime.",
+            "B. Software intrusion reports.",
+            "C. Software design blueprints.",
+            "D. Software developer training."
+        ],
+        "answer": "B",
+        "rationale": "Intrusion reporting is about collecting data on how much a software application is used \n\nand this enables privacy technologists to detect and better diagnose why the application may not have \nperformed as expected. More importantly, this sort of reporting can enable more robust software designs that \nare less susceptible to attacks.  \nBody of Knowledge Domain III, Competency E"
+    },
+    {
+        "question": "Which of the following is NOT an example of the usefulness of conducting a record of processing activity \n\n(RoPA) to all types and sizes of organizations? \n\nIdentifying who has access to what data and where for supervisory auditing purposes.",
+        "options": [
+            "A. Creating a collated list of personal data from entire book of clients.",
+            "B. ",
+            "C. Classifying sensitive or criminal data to implement data protection policy & procedures.",
+            "D. Distinguishing high-risk processing to identify the best solutions to mitigate or manage."
+        ],
+        "answer": "A",
+        "rationale": "A record of processing activities (RoPA) requires the listing of operational processes to \ndetermine high-risk processing, classification of personal data, and other details such as who has access to the \ninformation, where the information is located and when the information is shared. This can be highly useful for \nall entities as they prepare for audits or investigations from supervisory authorities, manage sensitive data sets \nand secure data across high-risk activities. A RoPA does not require a collated list of personal data across an \nentire book of clients, which would likely jeopardize operational efficiency.  \nBody of Knowledge Domain I, Competency C \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Transport Layer Security (TLS) is established using asymmetric cryptography and symmetric encryption and \n\nis used primarily to?",
+        "options": [
+            "A. Protect data in use.",
+            "B. Protect data at rest.",
+            "C. Protect data in transit.",
+            "D. Protect data once received. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "C",
+        "rationale": "TLS is a widely used means of encryption. It encrypts data before it is sent to protect \n\nthe data in-transit and decrypts it upon receipt. Because protection on the receiving end is not a feature of TLS, \nit is recommended that the sender only share the data with trusted parties.  \nBody of Knowledge Domain IV, Competency C"
+    },
+    {
+        "question": "What must a hiring organization assess while using a third-party service for testing its software?",
+        "options": [
+            "A. Whether the service provider has service infrastructure in the cloud.",
+            "B. Whether the service provider has additional services offered at a competitive price.",
+            "C. Whether the service provider has privacy and security equal to or stricter than its own.",
+            "D. Whether the service provider has levels of financial risk tolerance equivalent to its own."
+        ],
+        "answer": "C",
+        "rationale": "When a part of the business is outsourced, the hiring organization retains \n\naccountability. While authority can be delegated, you cannot delegate responsibility. To maintain standards and \ncompliance it is necessary to ensure that the service provider adheres to standards and compliance equally \nbefore delegating or outsourcing.  \nBody of Knowledge Domain II, Competency A"
+    },
+    {
+        "question": "What is a primary privacy risk associated with the government’s use of facial recognition technology on a \n\npublic street?",
+        "options": [
+            "A. Potential for covert mass surveillance.",
+            "B. Chilling effect on freedom of assembly.",
+            "C. Difficulty in obtaining informed consent.",
+            "D. Increased computational power requirements. SCENARIO IV Please use the following scenario to answer the next THREE questions. During a period of heightened COVID awareness, a large grocery retailer introduced various occupational and customer-related health and safety initiatives in their stores to help reduce virus spread and increase the ability to contact trace. One such initiative was to ask that all customers entering their physical stores provide their names, email addresses and/or mobile phone numbers. The prescribed method to enable this was through a ballot-box system, where prior to entering a store, customers would complete appropriate forms and then submit them into a secured ballot-box. However, some stores were struggling to keep up with customer demand, and in the interest of expediency, simply provided paper forms on clipboards outside their stores for people to complete. Each new customer would append their details below the previous customer with the details being publicly visible. The retailer’s customer service center received a call from a customer complaining that she was contacted by someone she didn’t know. The man stated he had obtained her information from a list outside one of the stores she visited. He said he would only delete her information if she agreed to meet him in person; otherwise, he would post her personal data on social media."
+        ],
+        "answer": "A",
+        "rationale": "When deployed widely in public spaces, facial recognition technology can enable large-\n\nscale tracking and monitoring of individuals without their knowledge or consent. The capability for \nnontransparent mass surveillance poses significant risks to personal privacy and civil liberties because it can \nlead to unauthorized and intrusive surveillance practices that infringe on individuals' right to privacy in public \nspaces. The other options may be problematic in different contexts, but they do not represent primary privacy \nconcerns associated with facial recognition technology. \nBody of Knowledge Domain VII, Competency C"
+    },
+    {
+        "question": "Which of the following privacy threats and violations is the man’s action an example of?",
+        "options": [
+            "A. Blackmail.",
+            "B. Accessibility.",
+            "C. Surveillance.",
+            "D. Appropriation."
+        ],
+        "answer": "A",
+        "rationale": "Blackmail, in a privacy context, relates to threatening to disclose personal data. In this \nexample, a man took what was meant to be confidential information—a female customer’s personal data—and \nused it to attempt to exploit her.  \nBody of Knowledge Domain III, Competency D"
+    },
+    {
+        "question": "Which type of privacy threat and violation did the retailer enable through unsecured lists outside its store?",
+        "options": [
+            "A. Dark patterns.",
+            "B. Digital profiling.",
+            "C. Specific surveillance.",
+            "D. Increased accessibility. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "D",
+        "rationale": "Increased accessibility is about amplifying the accessibility of personal data. By putting \nan unmonitored open list at the entrance to the store, the business failed to offer any safeguards for or mitigate \nthe risk to the information they were collecting.  \nBody of Knowledge Domain III, Competency C"
+    },
+    {
+        "question": "If the store that adopted this questionable practice also used the list to engage in email or SMS marketing \n\nto customers, what type of privacy threat and violation would this be?",
+        "options": [
+            "A. Intrusion.",
+            "B. Insecurity.",
+            "C. Data misuse.",
+            "D. Interrogation. END OF SCENARIO IV QUESTIONS"
+        ],
+        "answer": "C",
+        "rationale": "Data misuse is the use of information in ways it wasn’t intended for or wasn’t consented \n\nto by the data subject. Privacy policies, privacy notices, corporate policies, data privacy laws and industry \nregulations all set conditions for how data can be collected and used. Data misuse violates these requirements, \nwhich could bring about actions at the state and federal levels. \nBody of Knowledge Domain III, Competency C \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Which of the following is an example of the use of a privacy pattern?",
+        "options": [
+            "A. A common recurrence of privacy law violations within a company.",
+            "B. An organization’s color scheme within their privacy policy documentation.",
+            "C. A preformatted response to similar privacy-related inquiries received on a website.",
+            "D. A phone app feature which reminds the user that their location data is being shared."
+        ],
+        "answer": "D",
+        "rationale": "Phone app users may not be aware they are being tracked despite having provided \n\nexplicit consent in the past for the phone app to do so. It is important they understand that their personal data \nis being further collected/shared so that their prior explicit consent remains informed and valid. However, this \nshould be done in an unobtrusive way to prevent what is known as notification fatigue. Privacy patterns are \nreal-world, practical design solutions which can be used in any stage of the development process. In this \nexample, the phone app developer utilized what is known as an ambient notice privacy pattern, which gently \nreminds the user that their sensitive location data is being shared again.  \nBody of Knowledge Domain VI, Competency C"
+    },
+    {
+        "question": "Which of the following protects information while it is in use by multiple parties?",
+        "options": [
+            "A. Using Secure Multiparty Computation application.",
+            "B. Using password to protect a Microsoft Word document.",
+            "C. Using URL that begins with https:// when accessing a website.",
+            "D. Using WPA2 wireless network protocol for free public internet access."
+        ],
+        "answer": "A",
+        "rationale": "Personal information at rest, in transit and in use must be protected to ensure \n\nconfidentiality, integrity and availability. Secure Multiparty Computation (MPC) allows two or more computer \nsystems to be used in a computation and compute a mathematical result without otherwise revealing private \ninformation that is stored on those systems.  For example, payroll is private information that resides within each \nof the FTSE company.  By contributing to the statistical computation without disclosing the actual payroll \ninformation through a MPC network, a FTSE company would also benefit from such computations for their own \nbenchmarking purposes.  \nBody of Knowledge Domain III, Competency D"
+    },
+    {
+        "question": "Other than when new privacy laws or regulations are enacted, how often, at a minimum, should an \n\norganization update its privacy standards to ensure they are meeting expectations and requirements?",
+        "options": [
+            "A. Annually.",
+            "B. Quarterly.",
+            "C. Bi-annually.",
+            "D. Semi-annually."
+        ],
+        "answer": "A",
+        "rationale": "Privacy standards must be reviewed and refined on an annual basis at a minimum. To \nensure compliance with new laws, the privacy standard needs to be reviewed and refined whenever a relevant \nnew law is enacted.  \nBody of Knowledge Domain I, Competency C"
+    },
+    {
+        "question": "To prevent the identity of employees from being exposed when analyzing data for potential automation \n\nopportunities, the compliance team requires that information captured to perform capacity diagnostics on \n\nemployee screen time usage be?",
+        "options": [
+            "A. Perturbed.",
+            "B. Correlated.",
+            "C. Summarized.",
+            "D. Disseminated. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "C",
+        "rationale": "Summarizing data establishes categories based on data elements, such as an \n\nemployee’s department, role or location. Summarizing this data is necessary to avoid exposing personal data \nwhen information is viewed based on each of these various data points.  \nBody of Knowledge Domain VII, Competency D"
+    },
+    {
+        "question": "Which of the following would be an indication of effective privacy engineering?",
+        "options": [
+            "A. The organization implemented a card data environment perimeter and passed its PCI audit.",
+            "B. The IT department implemented automated user account provisioning by using single sign-on.",
+            "C. The organization implemented proactive privacy measures in its software development life cycle.",
+            "D. The marketing department updated the company’s privacy policy to include information on biometric identifiers."
+        ],
+        "answer": "C",
+        "rationale": "Privacy engineering involves integrating privacy considerations into product design, \n\nwhich may involve process management and/or technical know-how. Including privacy considerations in the life \ncycle of software development allows the organization to ensure that privacy measures are evaluated and \nupdated as privacy concerns change. \nBody of Knowledge Domain VI, Competency A"
+    },
+    {
+        "question": "BitHealth has recently implemented an electronic medical record (EMR) system. All patient information is \n\nnow stored in the EMR. Only those who have gone through an approval process by the privacy team have \n\naccess to the EMR. Lea, a member of the BitHealth IT team, has received a request from Stony Surgery \n\nrequesting access to the EMR so its case management team can approve/authorize inpatient interactions. \n\nHow should Lea respond to the request from Stony Surgery?",
+        "options": [
+            "A. Delete the email at once as it could be a phishing attempt.",
+            "B. Forward the request to the privacy team at BitHealth to respond.",
+            "C. Provide access to Stony Surgery because it is a health care provider.",
+            "D. Request a signed letter from a senior member of the practice to verify authority. SCENARIO V Please use the following scenario to answer the next FIVE questions. EdMed Inc. is one of the largest U.S. digital training companies fulfilling educational needs of many of the world’s health care professionals. Using high-resolution interactive video, they provide the finest educational experience, focusing on the secure and effective use of real-life surgery recordings for state-of-the-art medical products and techniques. Recently, the customer care department received a notice from the American Hospital surgical team in Rome, Italy about post-operation details found in certain case study educational materials. They included the patient’s name and Massachusetts Official Hospital details on an x-ray that was shown on video as a part of the EdMed Inc. training set. EdMed’s privacy network expert team reviewed the content. They then organized an urgent meeting with all stakeholders—Mark, Peter and Jane—to evaluate the risk of the incident and to analyze how to avoid this situation in the future. Mark and Peter are both privacy technologists responsible for acquiring and preparing raw data collected from different hospital sources by following EdMed’s privacy-by-design process. Jane is a project manager from TristarGlobe Inc., a specialized media company that develops training materials on behalf of EdMed Inc. Mark uses internally developed software, called DONAT, to parse the raw data collected and to identify any personal data that should be removed from training materials before they are released to the market. Peter then forwards raw data, including a change notice, to Jane, who then manages the production and release of the final training materials. Jane determines that they had received the x-ray containing personal data but there was no request to remove any details from it. Mark confirms that there was no change notice sent for the x-rays because Massachusetts Official Hospital is using a new x-ray format that was not recognized by DONAT. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0 Mark, Peter and Jane all agree TristarGlobe Inc. must take a more proactive role to determine the least amount of personal data needed on the training materials. Peter also proposed a DONAT request for change notice that will introduce an auditability quality attribute, which will have the ability to examine and review how the system parses raw data during production. These new procedures will require approval from additional stakeholders to provide an appropriate budget, staff, and additional approvals for the process, as well as proper training for those affected by the new procedure. Mark reported feedback from the legal department indicating that the case study materials constituted a data breach and that they have no documented output of a privacy risk assessment in this situation. They discuss meeting with the appropriate team members to develop privacy risk assessments for all processes that potentially involve personal data moving forward. Closing the meeting, all three agree that they must enforce any new processes and demonstrate that all parties involved are compliant with privacy policies and processes in the future."
+        ],
+        "answer": "B",
+        "rationale": "Requests for access should be handled by the privacy team to ensure the requesting \n\nparty meets the appropriate requirements for access. The request should not be answered by the IT \ndepartment.  \nBody of Knowledge Domain II, Competency A \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "To help Jane to take a more proactive role and to comply with standards, Peter and Mark will need to send \n\nher standard operating procedures (SOP) covering which of EdMed’s privacy-by-design process activities?",
+        "options": [
+            "A. Raw data testing and validation SOP.",
+            "B. Identify training information needs SOP.",
+            "C. Documenting training requirements SOP.",
+            "D. Low-level design and implementation SOP."
+        ],
+        "answer": "B",
+        "rationale": "TristarGlobe Inc. is planning to develop a procedure that will determine what the least \namount of personal data needed on the training materials is. That procedure is part of the privacy by design \nprocess activity, “identify information needs” covered by EdMed’s “Identify training information needs” SOP. The \ngoal of privacy by design’s “identify information needs” is to determine adequate, relevant and limited personal \ndata for what is necessary to ensure quality training, also known as the data minimization principle.  \nBody of Knowledge Domain V, Competency A"
+    },
+    {
+        "question": "The type of requirement that Peter proposed related to the upgrade of the technological system that \n\nparses the raw input data for TristarGlobe Inc. processing is known as what?",
+        "options": [
+            "A. A functional requirement.",
+            "B. An exclusion requirement.",
+            "C. A predictability requirement.",
+            "D. A nonfunctional requirement."
+        ],
+        "answer": "D",
+        "rationale": "Nonfunctional requirements, or quality attributes, define characteristics the system \nmust have, such as “auditability.” Declaring that the system must have the ability to be examined or reviewed \nwill provide all stakeholders with evidence that the data was processed as intended in a transparent manner.  \nBody of Knowledge Domain V, Competency A"
+    },
+    {
+        "question": "Following the report from the legal department, Mark should require which of the following be performed?",
+        "options": [
+            "A. Legal impact assessment.",
+            "B. Privacy impact assessment.",
+            "C. Transfer impact assessment.",
+            "D. Legitimate impact assessment."
+        ],
+        "answer": "B",
+        "rationale": "A PIA (privacy impact assessment) examines how personal data is being processed and \nwhat the privacy risks are to that personal data. Knowing where potential risks are allows organizations to \naddress those risks before an incident or breach occurs. Since neither EdMed nor Tristar could provide evidence \nof a PIA, it is necessary to perform one to ensure that all potential risks are addressed moving forward.  \nBody of Knowledge Domain I, Competency C"
+    },
+    {
+        "question": "Which control will be used to implement the final statement on which Peter, Mark and Jane agree?",
+        "options": [
+            "A. Balance.",
+            "B. Security.",
+            "C. Supervision.",
+            "D. Architecture. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "C",
+        "rationale": "Supervision enables an organization to enforce privacy policies through processes and \ndemonstrate that other actors, such as TristarGlobe Inc., are compliant with those policies and processes. By \ndocumenting findings, it also allows an organization to provide evidence of compliance with regulations, \nstandards or privacy policies to regulators and stakeholders.  \nBody of Knowledge Domain V, Competency A"
+    },
+    {
+        "question": "Peter and Mark’s first step was to collect all the facts about the reported situation, which included software, \n\nprocedures and vendors. What is this process known as?",
+        "options": [
+            "A. Privacy audit and IT control review.",
+            "B. Penetration test reporting and analysis.",
+            "C. Incident response procedure and review.",
+            "D. Data protection gap and process analysis. END OF SCENARIO V QUESTIONS"
+        ],
+        "answer": "C",
+        "rationale": "An incident response procedure is the process of documenting the details of the attack, \ndetermining the impact and then deciding on the appropriate actions. A privacy audit and IT control review \nprovides a detailed examination of both policy and practice to highlight compliance gaps in the control \nenvironment and in IT practices of the organization. A penetration test (pen test) is an authorized simulated \nattack performed on a computer system to evaluate its security. A data protection gap analysis compares the \norganization’s activities to specific identified compliance requirements and determines where there are gaps \nthat need to be addressed. \nBody of Knowledge Domain III, Competency B"
+    },
+    {
+        "question": "David is the privacy technologist at an EU company that has decided to use legitimate interest as the lawful \n\nbasis for processing the personal data of its customers in the new fraud prevention solution the company \n\nis developing. Following privacy by design principles, David proposed an assessment that will document the \n\nlegitimate interests, ensuring transparency and fairness of data processing. Which of the below concepts is \n\nthe most appropriate control David should propose?",
+        "options": [
+            "A. Balance.",
+            "B. Supervision.",
+            "C. Assessment.",
+            "D. Architecture."
+        ],
+        "answer": "A",
+        "rationale": "Balance utilizes the strategies of inform and control to reduce imbalances of \n\ninformation and power as David’s company has decided to use legitimate interest as the lawful basis for \nprocessing personal data of its customers in the new fraud prevention solution that will benefit the company \nand its customers.  The assessment is necessary to determine that benefits are proportional to any potential \nrisks incurred in terms of legitimacy, appropriateness and adequacy. \nBody of Knowledge Domain VI, Competency D \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Which of the following would be considered a type of privacy interference?",
+        "options": [
+            "A. Installing closed circuit television cameras on public streets.",
+            "B. Providing credit history that leads to inaccurate credit scores.",
+            "C. Completing an employment application truthfully and accurately.",
+            "D. Submitting an email address to receive a marketing email newsletter."
+        ],
+        "answer": "B",
+        "rationale": "Interference is a threat to a user’s privacy that could potentially lead to harm. This is an \nexample of a decisional interference in which the outcome affects an individual’s ability to secure a loan, among \nother actions.  \nBody of Knowledge Domain III, Competency E"
+    },
+    {
+        "question": "Which of the following scenarios best describes a situation where there could be surveillance without the \n\nreasonable knowledge of the individual?",
+        "options": [
+            "A. A review platform discloses users’ identities rather than allowing for anonymity when providing reviews.",
+            "B. An airport uses heat sensing cameras to screen individuals for fever while individuals pass through security checks.",
+            "C. A regulator reviews the financial transactions of individuals who have been placed on a government sanctions list.",
+            "D. A website matches the user’s IP address and browsing pattern to registered users regardless of whether the user is logged in."
+        ],
+        "answer": "D",
+        "rationale": "A user of a website may assume that when they are not logged in to their profile that \ntheir actions are not being associated with or linked to their profile. Cookies that record the IP address and \nbrowsing patterns are likely to allow a profile of an unauthenticated user to be matched with a registered \nprofile. This would be surveillance that constitutes a privacy threat since the individual is unlikely to be aware it \nis happening.  \nBody of Knowledge Domain III, Competency B"
+    },
+    {
+        "question": "Which of the following best describes the goal of privacy engineering?",
+        "options": [
+            "A. To ensure that all personal data is completely anonymized within a system.",
+            "B. To develop privacy-protective solutions that are in line with the business’ needs.",
+            "C. To ensure that data collection practices are aligned to an appropriate legal basis of processing.",
+            "D. To ensure that solutions appropriately protect confidential data in accordance with company policies. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "B",
+        "rationale": "Privacy engineering’s goal is to ensure that privacy-protective solutions are developed \n\nin line with business need. The others are incorrect as data security considerations are a part of privacy \nengineering considerations; anonymization is not a mandatory requirement for all personal data; and legal \nbasis of processing considerations is not a primary consideration of privacy engineering goals.  \nBody of Knowledge Domain VI, Competency B"
+    },
+    {
+        "question": "A data broker collects information on medications that are prescribed to individuals and sells this \n\ninformation to pharmaceutical companies to allow them to target their advertising budgets. The \n\ninformation they collect does not contain direct identifiers regarding the individuals to whom the \n\nmedications are prescribed, but does contain several indirect identifiers that in combination could allow \n\nreidentification. What must the data broker do prior to selling this data to pharmaceutical companies?",
+        "options": [
+            "A. No action is necessary prior to selling this data.",
+            "B. The data broker is not allowed to sell this data set.",
+            "C. The data broker must anonymize the data set before it can be sold.",
+            "D. The dataset must have a k-anonymity value greater than eighteen before it can be sold."
+        ],
+        "answer": "C",
+        "rationale": "We do not know enough about the data set to determine an appropriate value for k-\nanonymity. Because there is the potential for reidentification and the dataset contains potentially sensitive \ninformation, the dataset should be properly anonymized prior to being sold.  \nBody of Knowledge Domain IV, Competency C"
+    },
+    {
+        "question": "The leadership team for a retailer wants to improve customer satisfaction and increase customer retention. \n\nThey propose introducing software that would enable them to learn more about their customers’ attitudes \n\nand behaviors to act upon. Their IT team is leading efforts to select a closed-source loyalty management \n\nsystem for this purpose by creating a list of software requirements and undertaking a tender process. \n\nThese requirements include ensuring robustness of software against attack and vendor support for \n\npatching and customizations. Which is the following is TRUE?",
+        "options": [
+            "A. A closed-source loyalty management system has easily viewable code.",
+            "B. A closed-source loyalty management system can only be fixed by the vendor.",
+            "C. A closed-source loyalty management system has code that is regularly shared and modified.",
+            "D. A closed-source loyalty management system by its very nature is more resistant to attack than open- source."
+        ],
+        "answer": "B",
+        "rationale": "Closed-source software can only be fixed by the vendor, as the underlying code is \n\nproprietary, and consumers may need to wait to be assisted with issues. This could create problems for the \nretailer if it needs to act immediately to resolve a threat or address possible risk factors. \nBody of Knowledge Domain III, Competency E"
+    },
+    {
+        "question": "Which of the following controls would best help a company maintain compliance when the software \n\ndevelopment cycle moves into the product release stage?",
+        "options": [
+            "A. A rule that any applied code change, upgrade or patch will generate an email alert to the privacy compliance subject matter expert.",
+            "B. A set of change control standard operating procedures that require any significant privacy changes to be reviewed by a cross-functional team.",
+            "C. A privacy compliance subject matter expert proactively reviews all software assets every quarter to monitor whether there have been any changes.",
+            "D. The software is subject to an internal data protection audit, which will review whether the software is as described in its release notes, conducted on a two-year cycle."
+        ],
+        "answer": "B",
+        "rationale": "In practice, privacy professionals often have restricted resources and performing a \nproactive review of all assets regardless of whether there have been changes or not is not an effective use of \nthose resources.  Setting up an alert system may sound like a solution to the problem of non-specific \nmonitoring, but in practice if the SME is alerted for every single change generally what happens is that the \nindividual receives so many email alerts that they stop reviewing them and may even filter them to a folder.  \nFinally, the data protection audit is not an effective monitoring tool because it happens too infrequently and is \nmeasuring against a point in time that has since been superseded so this is also an ineffective form of \nmonitoring.  The best practice is to train all staff to follow standard operating procedures so that they inform \nthe privacy compliance subject matter expert of any significant changes. This allows the SME to be discerning \nand targeted, while staying on top of anything relevant so they are up to date.   \nBody of Knowledge Domain VI, Competency D \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "A company wants to build a brand image that differentiates itself from the competition by focusing on \n\nenhancing customer trust to grow its business. In the company’s online environment, they want to \n\nempower data subjects to play an active role in the management of their own data, via a consent \n\nmechanism. Which of the following privacy by design foundational principles best supports this initiative?",
+        "options": [
+            "A. Full functionality – allow users full access.",
+            "B. End to end security – full life-cycle protection.",
+            "C. Respect for user privacy – keep it user centric.",
+            "D. Proactive not reactive - preventive not remedial. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "C",
+        "rationale": "The respect for user privacy principle supports the building of trust by having data \n\nsubjects play an active role in the management of their data. The privacy by design principle of respect for user \nprivacy is also supported by several Fair Information Practice Principles (FIPPs), including consent.  \nBody of Knowledge Domain I, Competency A"
+    },
+    {
+        "question": "Software that collects and reports runtime failures to a bug tracker may sometimes include the user’s \n\npersonal data as part of the bug report. What should be a design consideration for such automated bug \n\ntrackers?",
+        "options": [
+            "A. Transmit user’s personal data without explicit disclosures.",
+            "B. Publish the bug report online with the user’s personal data.",
+            "C. Encrypt personal data during transmission and after receipt.",
+            "D. Duplicate the entries in the bug report, including the personal data. SCENARIO VI Please use the following scenario to answer the next TWO questions. You have just been hired by Hybrid-Co as their technical lead for workplace resources (WPR) and human resources IT systems. In Spring 2020, all workers were sent home due to the COVID-19 pandemic and only remote work was permitted. As the pandemic moved into an endemic phase, hybrid work quickly became the norm (i.e., some workers are in the office and others are remote). You were tasked with designing the company’s hybrid work model and leading the company-wide initiative for employees to return to the office safely. The first task the CEO asked your team to complete was to assess how much office space was needed to provide sufficient workspace for employees who want to work in an office environment. Relying on your own experience and the team’s expertise, you design a system that combines information from security logs from badge readers, Wi-Fi access point logs, and video footage from CCTV security cameras to collect information about people who enter and exit into the building and connect their devices to the company’s Wi-Fi. This data is de-identified and aggregated to protect individual privacy. While the pandemic was moving toward an endemic phase, periodic COVID-19 surges still occurred. Hybrid-Co had to take steps to make the office environment as safe as possible. In that regard, the chief medical officer asked you to help devise a method to track COVID-19 positive cases in the office. With so many remote workers in the new hybrid work environment, managing by walking around is not as effective as it used to be, and managers have rising concerns about employee productivity. For your third task, you were asked to assess what tools, logs, information and metadata were available to measure productivity and employee engagement within the hybrid work model."
+        ],
+        "answer": "C",
+        "rationale": "Bug reports contain various types of information, including software version, crash \n\ndescription, reproducing steps, reproducing test cases, etc. including user details. It is the responsibility of the \napplication team to develop mechanisms to encrypt data in transit and storage while performing bug tracking \nand reporting.  \nBody of Knowledge Domain III, Competency B"
+    },
+    {
+        "question": "Do the company’s data collection processes regarding building access align with the OECD Fair Information \n\nPractices and Ann Cavoukian’s Privacy by Design framework?",
+        "options": [
+            "A. Yes, the company has a right to use non-personal data in its possession to further legitimate business objectives.",
+            "B. Yes, provided the company obtains explicit, written consent from the data subjects to utilize the de- identified data.",
+            "C. Yes, as long as the data is used to determine which specific employees need access on certain days to provide appropriate workspaces.",
+            "D. Yes, provided only the IT team can reidentify individuals from the data collected and it is used for facilities management, a reasonably anticipated secondary use. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "A",
+        "rationale": "Ann Cavoukian’s Privacy by Design framework, Principle 1 (Proactive not Reactive; \n\nPreventative not Remedial) calls for preventing privacy harms before they happen. One of the best ways to do \nthis is through data minimization and removing personal data wherever possible. The data has been de-\nidentified and aggregated as the stated secondary purpose is to assess facilities utilization making it \nunnecessary to know “who” has been in the office, just that there has been a person there. Statistical, non-\npersonal data is all that is needed to achieve the new purpose for the data. Principle 4 (Full Functionality – \nPositive-Sum, not Zero-sum) is also relevant in designing a “win-win” solution where privacy can be respected \n(risk mitigated) and data can be repurposed to achieve additional, legitimate business objectives. \nBody of Knowledge Domain I, Competency B"
+    },
+    {
+        "question": "Which of the following did you neglect to do in your haste to comply with your CEO’s request?",
+        "options": [
+            "A. Obtain employee explicit consent prior to engaging in any monitoring of their activities.",
+            "B. Ensure you do not monitor employees’ productivity to avoid breaking their trust and invading privacy.",
+            "C. Consult with the legal department to ensure compliance with all applicable laws and regulations.",
+            "D. Evaluate whether the processes ensure employees’ productivity and the company’s profitability. END OF SCENARIO VI QUESTIONS"
+        ],
+        "answer": "C",
+        "rationale": "Employee monitoring is complicated. Certainly, there is a legitimate interest in ensuring \nyour employees are productive, but employment and privacy laws require that the employer and employee \ninterests are appropriately balanced. An organization should consult with its legal department or \nrepresentatives to confirm monitoring practices are legally compliant.  \nBody of Knowledge Domain VII, Competency D"
+    },
+    {
+        "question": "In the privacy by design model, imposing controls within a design system reduces threat actors’ access to \n\npersonal information and minimizes privacy risks when collecting or processing personal information.  \n\nWhich of the following is an example of a security control?",
+        "options": [
+            "A. Using pseudonymous data and then pushing that data toward a user-centric architecture.",
+            "B. Allowing full access to all detailed information available to specific users in the system based on users’ locations.",
+            "C. Summarizing detailed information into categories based on more abstract attributes and restricting access to summary information.",
+            "D. Using internal privacy policies for each department that best describe how the organization wishes to manage and protect personal information."
+        ],
+        "answer": "C",
+        "rationale": "Summarizing detailed information into categories based on more abstract attributes \n\nand restricting access to summary information is the correct answer. It describes the abstract (summarize) and \nhide (restrict) strategies for securing data domains. \nBody of Knowledge Domain VI, Competency D \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Industrial Industries, Inc. collects customer personal data to assist with product returns. Three years after \n\nthe sale, customers can no longer return the product, but Industrial Industries wants to continue using \n\nsome of this information to analyze the percentage of returns during that period of time. Of the following \n\noptons, which is the best practice to mitigate risks associated with maintaining this data for return \n\nanalyses?",
+        "options": [
+            "A. Review the information collected in the database and delete any personal data that could be used to identify customers.",
+            "B. Review employee access levels for the database and remove those individuals who no longer have a business need to access the information.",
+            "C. Develop an automated process that removes the customer’s email address from the database and avoids human error when deleting that information.",
+            "D. Save unneeded customer personal data in a distinct database that has additional security measures, such as enhanced authentication requirements."
+        ],
+        "answer": "A",
+        "rationale": "Subject to any legal requirements, companies can effectively mitigate privacy, security \nand regulatory risks by removing unneeded personal data from their systems. Anonymization is another step \nthat can be taken, although not provided in these options. Many privacy regulations, such as the GDPR, CCPA \nand HIPAA, require a thorough analysis to determine whether data has been sufficiently anonymized and no \nlonger identifies an individual. Companies should consider statutory and regulatory guidance when deleting or \nanonymizing data. They should also consider how the information they collect or retain could be combined with \npublicly available information to reidentify the data.  \nBody of Knowledge Domain IV, Competency A"
+    },
+    {
+        "question": "You work in human resources and want to deploy a new tool that will assist with recruitment through the \n\nuse of AI. Which of the following actions is least likely to eliminate bias/discrimination when using this \n\ntool?",
+        "options": [
+            "A. Focusing on inputs and outcomes of the AI tool.",
+            "B. Asking the recruit if they think the outcome is fair.",
+            "C. Regularly auditing the algorithms to ensure fairness.",
+            "D. Having humans review decisions made by the tool. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "B",
+        "rationale": "The other actions are options better designed to eliminate bias. Inputs are important \n\nwhen it comes to automated decision-making as often input contain biases and discriminatory patterns. Even if \ngreat care is taken with inputs, outcomes should still be monitored and reviewed to minimize \nbias/discrimination. Additionally, a regular review of the tool to ensure it is generating fair outcomes, as well as \nhaving humans oversee the tool are all ways to minimize bias and discrimination.  \nBody of Knowledge Domain III, Competency A"
+    },
+    {
+        "question": "Which of the following IT roles serves as a repository of privacy knowledge and tailors this knowledge as \n\nneeded to help different stakeholders fulfill their roles?",
+        "options": [
+            "A. Area specialists.",
+            "B. Project managers.",
+            "C. Process administrators.",
+            "D. Software programmers."
+        ],
+        "answer": "A",
+        "rationale": "The area specialist bridges the technical gap between software engineering and privacy \nand consults across multiple IT projects within an organization to share privacy knowledge. Area specialists also \ncollect critical regulatory requirements from lawyers; validate that marketing requirements are consistent with \nlaws and social norms; meet with designers to discuss best practices when translating requirements into design \nspecifications; collect user feedback and monitor privacy blogs, mailing lists and newspapers for new privacy \nincidents. Project managers ensure that adequate resources are available to construct the system and that \nteam members communicate effectively during construction, deployment and maintenance. Programmers \ntranslate software design into source code using best practices and standard libraries and frameworks. \nAdministrators install and maintain the software.  \nBody of Knowledge Domain II, Competency A"
+    },
+    {
+        "question": "Which of the following is a tool that shows the relationship between the requirements of a privacy law and \n\nthe implemented software design elements?",
+        "options": [
+            "A. Digital signature.",
+            "B. Traceability matrix.",
+            "C. Block level disk encryption.",
+            "D. Cryptographic hash function."
+        ],
+        "answer": "B",
+        "rationale": "In privacy, a traceability matrix also connects requirements to user agreements, such as \n\nprivacy policies, terms of use (ToU) agreements, end-user license agreements (EULA) and so on. When \nconducting a traceability exercise or whenever a requirement or IT system component changes, the trace \nmatrices should be consulted to determine the impact of the change on other parts of the system, including \nprivacy policies.  \nThe correct answer is Domain IV, Competency B"
+    },
+    {
+        "question": "Linda visits a website to register as a paid test subject for a cancer research project for the first time. \n\nBesides her contact information, she is required to provide extensive health information about herself and \n\nfamily members. Clicking on the link that explains how the health information will be used, Linda is directed \n\nto a long and verbose medical statement that she does not understand. This is an example of which privacy \n\npattern?",
+        "options": [
+            "A. Fair distribution reciprocity.",
+            "B. Abridged terms and conditions.",
+            "C. Minimal information asymmetry.",
+            "D. Medical information asymmetry."
+        ],
+        "answer": "C",
+        "rationale": "Information asymmetry is generally described as one party (the research organization) \nhaving more or better information about a transaction than the other (Linda). The registration should require \nminimal information from Linda, so that only as much personal data as is required, explained and consented to, \nis processed. Further reduce the imbalance of policy knowledge by providing clear and concise policies (written \nand verbal in some cases) rather than, or in addition to, complex and verbose ones. \nBody of Knowledge Domain VI, Competency C \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "Which of the following is an example of a privacy threat during data collection?",
+        "options": [
+            "A. A credit card payment processor monitoring each transaction as it occurs.",
+            "B. An employer asking an interviewee about marital status during a job interview.",
+            "C. A doctor adding auxiliary information to a patient’s record during a consultation.",
+            "D. A credit bureau aggregating an individual’s payment history from multiple creditors."
+        ],
+        "answer": "B",
+        "rationale": "The concepts of privacy threats and violations during data collection is focused on \ninstances where data is being collected from the individual for whom it pertains. An interviewer asking a \ncandidate an inappropriate question (e.g., about their sexual orientation or marital status) when this has no \nbearing on the candidate’s ability to do the job is likely a violation of the candidate’s privacy. Additionally, \ncollecting this type of personal data may result in a violation of regional laws or claims of discrimination.  \nBody of Knowledge Domain III, Competency B"
+    },
+    {
+        "question": "As part of a major rebranding effort, a social media company is adding new features to its mobile app, \n\nincluding embedded application programming interfaces (APIs) that easily give users access to other social \n\nmedia services. Before rolling out these changes, what should the company’s privacy team do?",
+        "options": [
+            "A. The company should develop an email and social media marketing campaign targeting existing customers to make them aware of these features.",
+            "B. The company should assess if the inclusion of the APIs alters the way current customer’s data is used and notify those customers of those changes.",
+            "C. The company should select a group of current customers for a beta test and confirm there are no conflicts with the core product before sending out notice.",
+            "D. The company should create a new privacy policy and notify current customers of new features and provide links to descriptions of the technologies being used. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "B",
+        "rationale": "Specific requirements vary by jurisdiction, but current customers should be given notice \n\nof any changes in how their information is being used or who may be accessing it. When using an API, personal \ndata may be exposed or logged through remote call procedures, and often technical explanations are \ninsufficient for customers to fully understand the implications of new features or technologies.  \nBody of Knowledge Domain IV, Competency B"
+    },
+    {
+        "question": "Which security mechanism would be the most reliable technology to keep data confidential at rest, in-\n\ntransit, or when processing real-time analytics?",
+        "options": [
+            "A. Data backup.",
+            "B. Data encryption.",
+            "C. Hardware-based security.",
+            "D. Two-factor authentication."
+        ],
+        "answer": "B",
+        "rationale": "Data encryption uses algorithms to encode data into an unreadable format that needs \n\nan authorized key for decryption. It is recognized as one of the most reliable ways to keep data confidential at \nrest, in-transit, or when processing real-time analytics.  \nBody of Knowledge Domain IV, Competency C"
+    },
+    {
+        "question": "Which of the following events is a trigger to update a data protection impact assessment or privacy impact \n\nassessment (DPIA/PIA) for a system?",
+        "options": [
+            "A. The organization merges with a competitor.",
+            "B. The organization patches its operating system.",
+            "C. The organization hires a new chief privacy officer.",
+            "D. The organization acquires a new office space in the same city. SCENARIO VII Please use the following scenario to answer the next FIVE questions. Shop4Electronics, a large electronics retailer has a website and a mobile app where its customers can make purchases, see their order history and start returns. Shop4Electronics uses a variety of tracking technologies on its website and app. The Shop4Electronic website uses several pieces of web code that in turn leverage cookies for the purposes of internal analytics, fraud detection and digital advertising. When a user visits the Shop4Electronics website they are assigned several different cookie IDs. The code on the website collects the cookie ID of each user and associates that data to any completed purchases together with any browsing behavior on the website. In addition, information about the user’s device is collected and associated to their cookie IDs. This information includes their IP address, device operating system, device type, browser name, screen size, browser language and list of browser plugins installed. A user visits the Shop4Electronics website and completes an order for two new laptops. The user later receives an email that their order was rejected as their fraud vendor, FraudNoMore, marked the transaction as fraudulent. FraudNoMore uses their third-party cookie IDs collected from the Shop4Electronics website and associated device data described above to make their determination of fraud. However, if their third-party code is unable to set and collect cookies and other device information about the user, it automatically considers that transaction fraudulent. In addition to the website, the Shop4Electronics mobile application uses the browsing behavior of its users for the same set of uses cases as their website. The use cases are analytics, fraud detection, and digital advertising. To deliver digital advertising, the Shop4Electronics mobile app collects the mobile adverting identifier in combination with the browsing activity and sends that data to its social media and advertising partners. Those social media and advertising partners in turn use those mobile advertising identifiers to serve digital advertisements for Shop4Electronics. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0 A user downloads and installs the Shop4Electronics Mobile App to their new iPhone. Upon opening the app, Shop4Electronics asks for permission to track the user via the Apple-provided App Track Transparency (ATT) dialog, which requires consent. This dialog is required to access the advertising identifier on any iPhone or iPad running iOS 14.5 or later. The user rejects the request to be tracked by selecting ‘Ask App Not to Track’ in the dialog. Despite declining to be tracked, the user can use to app as normal."
+        ],
+        "answer": "A",
+        "rationale": "A merger or acquisition can introduce differences in data processing practices, differing \napproaches to privacy risk management and operational aspects that are inconsistent or even incompatible \nwith the other. The rest of the options do not align with commonly known PIA triggers.  \nBody of Knowledge Domain II, Competency B"
+    },
+    {
+        "question": "There has been an increase in calls to the customer service department of Shop4Electronics with \n\ncomplaints that orders were rejected incorrectly due to fraud. Which recommendation should be provided \n\nto reduce the number of false positives identified by FraudNoMore?",
+        "options": [
+            "A. Disable FraudNoMore entirely as fraud detection is not a valid business reason to track users.",
+            "B. Ask users to reset cookies in their browser and try again if their transaction is rejected as fraudulent.",
+            "C. Stop marking transactions as fraudulent when third-party code is unable to set cookies and collect associated data.",
+            "D. Require all users to have a unique IP address when making a purchase to avoid matching a known fraudulent IP address."
+        ],
+        "answer": "C",
+        "rationale": "More web browsers, including Safari and Firefox, now block third-party cookies by \n\ndefault. Technologies that rely on third-party cookies will need to adjust their practices to account for browsers \nthat come with built-in privacy protections. In this case, FraudNoMore is marking all transactions as fraud when \ntheir third-party cookies are unable to be collected. As more browsers disable this type of tracking by default, \nrequiring third-party data collection and tracking to make a purchase is both an anti-privacy and anti-business \napproach. There are first-party mechanisms available to allow this type of fraud detection within privacy \nframeworks such as Apple’s Intelligent Tracking Prevention (ITP).  \nBody of Knowledge Domain VII, Competency B"
+    },
+    {
+        "question": "If a guest visitor on the Shop4Electronics website cleared their cookies, which technique could be used to \n\ncontinue to uniquely identify that user, based on the data collected by Shop4Electronics and its partners?",
+        "options": [
+            "A. Federated Identity.",
+            "B. Anthropomorphism.",
+            "C. Cross-site Scripting.",
+            "D. Device Fingerprinting."
+        ],
+        "answer": "D",
+        "rationale": "Device fingerprinting is the technique used to create a unique picture of a given user \n\nbased on a series of datapoints. Many of these data points on their own are harmless, but together, are unique \nenough to create a very high probability that if another device with the same characteristics is seen again, it is \nthe same individual as before. The data collected in this case includes cookie IDs in addition to IP address, \ndevice operating system, device type, browser name, screen size, browser language and list of browser plugins \ninstalled.  \nBody of Knowledge Domain VII, Competency B \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0"
+    },
+    {
+        "question": "A Shop4Electronics customer signs-up to receive email marketing. This customer is concerned about \n\nprivacy and wants to take steps to ensure Shop4Electronics is not notified when they open a \n\nShop4Electronics email. Which method would limit email open tracking?",
+        "options": [
+            "A. Use of an email client that blocks images and execution of specific scripts.",
+            "B. Installing an ad blocker on each browser the customer uses on all devices.",
+            "C. Disable location tracking in the Shop4Electronics mobile app and on all browsers.",
+            "D. Use of a virtual private network (VPN) service to access email and Shop4Electronics’ website."
+        ],
+        "answer": "A",
+        "rationale": "Email open tracking is done via use of a tracking pixel or other images or code within \nthe body of an email. When you open an email, the tracking pixel is loaded, and the organization receives a \nsignal that a specific email address has opened that email. Many email clients now block images by default. \nWhen images are blocked by default, the tracking pixel is not loaded when the email is opened. If the pixel is not \nloaded the company does not receive a notification that the email was opened.  \nBody of Knowledge Domain VII, Competency B"
+    },
+    {
+        "question": "The Shop4Eletronics website requests a user’s location via their browser upon first visit to the site. This \n\nlocation data is used to determine a zip code to calculate shipping cost and tax. Upon navigating to \n\ncheckout, the user notices their zip code has been pre-populated. Which mechanism was likely used to \n\ndetermine location if the user rejected to share location via their browser?",
+        "options": [
+            "A. Location from GPS data.",
+            "B. Location from IP address.",
+            "C. Location from MAC address.",
+            "D. END OF SCENARIO VII QUESTIONS ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "B",
+        "rationale": "Many web browsers allow website operators to request location data from end users. \nWhen this location consent is granted, the web browser will use a variety of signals to determine the most \nprecise location. The signals used depend on the device, but generally it will rely on the most accurate \ntechnology available on that device. For example, if location is granted on a cell phone, the browser is able to \nleverage very precise geo-location based on the GPS data from the cell phone. However, even if the user \ndeclines to share their location with the website, their IP address is always sent to a web server as part of \nnormal network communications. Many websites leverage this information to tailor the website to you, \nregardless of your browser-level location settings. As privacy is becoming more mainstream, website operators \nare considering to what extent IP addresses should be used without permission for purposes other than its \nnecessary usage in delivering the webpage.  \nBody of Knowledge Domain VII, Subdomain B"
+    },
+    {
+        "question": "Your company is contemplating deploying an app that tracks users’ specific locations and sells that \n\ninformation to third-party advertisers. Which of the following is the final concern of those listed that will \n\nneed to be addressed?",
+        "options": [
+            "A. The extent to which the users’ information is compiled into a profile.",
+            "B. The extent to which the location might track someone to a “sensitive” place.",
+            "C. Whether individuals have been provided sufficient notice of the tracking activities.",
+            "D. Whether the agreement with the developer is compliant with your privacy policies."
+        ],
+        "answer": "D",
+        "rationale": "Each of the items listed must be considered when choosing to deploy an app. However, \nreviewing the agreement for compliance with your own policies is the final consideration listed here. Ensuring \nyour company understands fully how the use of the app will affect your customers/the users must be done \nbefore signing any agreements with the developer. \nBody of Knowledge Domain III, Competency B"
+    },
+    {
+        "question": "In the context of a large supermarket chain, which of the following actions best demonstrates support for \n\nindividuals' privacy rights requests?",
+        "options": [
+            "A. Sharing customer data with third-party vendors routinely to improve service offerings.",
+            "B. Limiting personal data processing to only what is necessary for completing transactions.",
+            "C. Allowing customers to access and correct their personal data through a secure online portal.",
+            "D. Storing all customer purchase histories permanently to personalize future marketing campaigns. ©2024, International Association of Privacy Professionals, Inc. (IAPP) CIPT Practice Exam v2.0"
+        ],
+        "answer": "C",
+        "rationale": "Allowing customers to access and correct their personal data through a secure online \nportal ensures that the supermarket chain supports individuals' privacy rights requests effectively. This reflects \nthe importance of providing customers with control over their personal data, aligning with the principles of \ntransparency and user empowerment.  \nBody of Knowledge Domain II, Competency B \n\n           ©2024, International Association of Privacy Professionals, Inc. (IAPP)                                                                   CIPT Practice Exam v2.0 \n\n \n \n \n \n \n \n \n \n \n \n \n \n\fBuild on Your Practice Exam Results\n\nEXAM BODY OF KNOWLEDGE  \nA free outline of information \ncovered in the exam.\n\nEXAM BLUEPRINT \nA free list of how many questions \nto expect on each topic.\n\nCIPT TEXTBOOKS  \nAn Introduction to Privacy for \nTechnology Professionals and \nStrategic Privacy by Design.\n\nIAPP PRIVACY IN \nTECHNOLOGY TRAINING \nExpert instruction in applying \nprivacy requirements to technology.\n\nThis practice exam is just one \nresource out of the many IAPP \nstudy aids designed to help you \npass the CIPT exam. Prepare by \nreviewing your practice results \nand other resources. \n\nGo to iapp.org/train to find these and other \n\nresources that will help you feel confident \n\nand prepared for your CIPT exam.\n\nOfficial IAPP Exam Preparation Resources\n\nOfficial IAPP Exam Preparation Resources"
     }
 ]
