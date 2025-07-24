@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IAPP Exam Simulator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #204ce5;
-            --primary-hover: #001ab3;
+            --primary-color: #4f46e5;
+            --primary-hover: #4338ca;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
         }
         .bg-blue-500 { background-color: var(--primary-color) !important; }
         .hover\:bg-blue-600:hover { background-color: var(--primary-hover) !important; }
@@ -16,16 +20,16 @@
         .bg-blue-600 { background-color: var(--primary-color) !important; }
     </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h1 class="text-2xl font-bold text-center mb-2">IAPP Exam Simulator</h1>
-        <h2 class="text-lg text-center mb-6">Choose Practice Exam</h2>
-        <div class="space-y-4">
-            <a href="quiz.html?exam=aigp" class="block w-full bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">AIGP</a>
-            <a href="quiz.html?exam=cipp-e" class="block w-full bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">CIPP/E</a>
-            <a href="quiz.html?exam=cipm" class="block w-full bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">CIPM</a>
-            <a href="quiz.html?exam=cipt" class="block w-full bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">CIPT</a>
-            <a href="quiz.html?exam=cipp-a" class="block w-full bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">CIPP/A</a>
+<body class="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 flex items-center justify-center min-h-screen">
+    <div class="bg-white/90 backdrop-blur-md p-10 rounded-2xl shadow-2xl w-full max-w-xl">
+        <h1 class="text-3xl font-bold text-center mb-4 text-gray-800">IAPP Exam Simulator</h1>
+        <h2 class="text-md text-center mb-8 text-gray-600">Choose Practice Exam</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <a href="quiz.html?exam=aigp" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg text-center shadow-md transition-all">AIGP</a>
+            <a href="quiz.html?exam=cipp-e" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg text-center shadow-md transition-all">CIPP/E</a>
+            <a href="quiz.html?exam=cipm" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg text-center shadow-md transition-all">CIPM</a>
+            <a href="quiz.html?exam=cipt" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg text-center shadow-md transition-all">CIPT</a>
+            <a href="quiz.html?exam=cipp-a" class="col-span-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg text-center shadow-md transition-all">CIPP/A</a>
         </div>
     </div>
 </body>
